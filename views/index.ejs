@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link
+			rel="shortcut icon"
+			href="uploads/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<title>EduPi School</title>
+	</head>
+	<body>
+		<div class="ham-background">
+			<div class="nav-links">
+				<button class="cross">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24"
+						width="18"
+						viewBox="0 0 384 512"
+					>
+						<path
+							fill="#002147"
+							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+						/>
+					</svg>
+				</button>
+				<div class="list">
+					<a href="/">Home</a>
+					<a href="/fsd">Full Stack Development</a>
+					<a href="/datascience">Data Science</a>
+					<a href="/about">About</a>
+					<a href="/earn">Refer and Earn</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="menu-container">
+				<div class="hamburger-menu">
+					<button class="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							width="21"
+							viewBox="0 0 448 512"
+						>
+							<path
+								fill="#002147"
+								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="logo">
+					<img src="uploads/img/edupischoollogo.png" alt="" />
+					<h1>EduPi School</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/fsd">Full Stack Development</a></li>
+						<li><a href="/datascience">Data Science</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/earn">Refer and Earn</a></li>
+					</ul>
+				</nav>
+				<div class="header-buttons">
+					<% if (user) { %>
+					<!-- Display user's profile image when logged in -->
+					<a href="/profile"
+						><img
+							src="<%= user.profileImage || '/uploads/profile.png' %>"
+							class="profile-image"
+							alt="User Profile"
+					/></a>
+					<% } else { %>
+					<!-- Show login and signup buttons when not logged in -->
+					<a href="/login" class="login-button">Login</a>
+					<a href="/signup" class="signup-button">Sign Up</a>
+					<% } %>
+				</div>
+			</div>
+		</header>
+
+		<div class="home">
+			<div class="home-info">
+				<p>Empowering Minds, Shaping Futures, Bridging the Gaps</p>
+				<h1>Kashmir’s Best Placement Driven Learning Platform</h1>
+				<a href="/getstarted">Get Started for free</a>
+			</div>
+			<div class="home-logo">
+				<img src="/uploads/img/logo.png" />
+			</div>
+		</div>
+
+		<div class="school">
+			<img class="background" src="/uploads/img/SchoolBG.png" alt="" />
+			<h1>EduPi School</h1>
+			<div class="school-content">
+				<p id="para-1">
+					<span>EduPi School</span> is a pioneering educational
+					platform born from the heart of Kashmir. What began as a
+					deep-rooted exploration of the educational landscape in
+					2021, has evolved into a passionate endeavor to
+					revolutionize the way our students prepare for the future.
+				</p>
+				<p id="para-2">
+					Our journey started with an unwavering commitment to
+					understand the challenges faced by our local students,
+					particularly in the realms of science and technology.
+					Witnessing the gaps in their preparation for the
+					professional world, we set out to build a solution that goes
+					beyond conventional learning.
+				</p>
+				<p id="para-3">
+					School is a guiding solution for aspiring minds, offering a
+					comprehensive set of resources and guidance to equip
+					students for the competitive job market. We acknowledge the
+					necessity of the current educational system and its
+					shortcomings which cause the students to face challenges in
+					the modern professional environments. Our platform is
+					designed to provide the students with the essential skills
+					and practical knowledge needed to secure coveted positions
+					in leading companies.
+				</p>
+				<p id="para-4">
+					What sets us apart is our intimate understanding of the
+					Kashmiri community and its unique needs. We are not just
+					another option, we are a homegrown initiative deeply
+					invested in the success and growth of our students. By
+					prioritising affordability without compromising quality, we
+					ensure that students have access to the best possible
+					opportunities for professional development.
+				</p>
+				<p id="para-5">
+					At EduPi School, we believe in empowering our students with
+					the tools and expertise they need to thrive in their
+					careers. With our tailored programs, personalised guidance,
+					and a holistic approach to learning, we are redefining the
+					narrative of education in Kashmir and (in the coming future)
+					beyond!
+				</p>
+			</div>
+		</div>
+
+		<div class="success">
+			<img src="uploads/img/SuccessBG.png" alt="" class="background" />
+			<div class="success-content">
+				<h1>EduPi Way of Success!</h1>
+				<div class="tabs">
+					<div class="tab tab-1" id="tab-active">
+						<div class="title">Quality Education</div>
+						<p>
+							Establishing partnerships with tech companies for
+							job placements and career growth. Our focus is on
+							connecting our students with leading industry
+							players, providing them with valuable opportunities
+							to kickstart their careers.
+						</p>
+					</div>
+					<div class="tab tab-2">
+						<div class="title">Job Opportunities</div>
+						<p>
+							Our platform connects students with career
+							opportunities to secure their future in the
+							workforce.
+						</p>
+					</div>
+					<div class="tab tab-3">
+						<div class="title">Global Perspective</div>
+						<p>
+							We offer a global perspective through international
+							partnerships and exposure to diverse cultures.
+						</p>
+					</div>
+				</div>
+				<div class="buttons">
+					<button class="tab-btn tab-btn-1" id="btn-active">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="16"
+							width="16"
+							viewBox="0 0 512 512"
+						>
+							<path
+								class="active-svg"
+								fill="#ffffff"
+								d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+							/>
+						</svg>
+					</button>
+					<button class="tab-btn tab-btn-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="16"
+							width="16"
+							viewBox="0 0 512 512"
+						>
+							<path
+								fill="#ffffff"
+								d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+							/>
+						</svg>
+					</button>
+					<button class="tab-btn tab-btn-3">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="16"
+							width="16"
+							viewBox="0 0 512 512"
+						>
+							<path
+								fill="#ffffff"
+								d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="programs">
+			<img class="background" src="/uploads/img/ProgramsBG.png" alt="" />
+			<h1>Our Programs</h1>
+			<div class="program">
+				<div class="details">
+					<h2>Full Stack Development</h2>
+					<h3>Start your career in web development</h3>
+					<div class="images">
+						<img src="/uploads/img/Html5.png" alt="" />
+						<img src="/uploads/img/Css.png" alt="" />
+						<img src="/uploads/img/Javascript.png" alt="" />
+						<img src="/uploads/img/React.png" alt="" />
+						<img src="/uploads/img/Nodejs.png" alt="" />
+						<img src="/uploads/img/Github.png" alt="" />
+					</div>
+					<div class="tasks">
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>HTML & CSS Fundamentals</p>
+						</div>
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>JavaScript Mastery</p>
+						</div>
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>Front-end with React.js</p>
+						</div>
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>
+								Back-end with Node.js, MongoDB, and Express.js
+							</p>
+						</div>
+					</div>
+					<a href="#">Explore more</a>
+				</div>
+				<div class="apply">
+					<div class="placement">
+						<span>100%</span>
+						<p>PLACEMENT GUARANTEE</p>
+					</div>
+					<div class="info">
+						<h2>Batch Duration:</h2>
+						<p>8 to 9 months</p>
+					</div>
+					<div class="info">
+						<h2>Starts on:</h2>
+						<p>December 20, 2023</p>
+					</div>
+					<div class="info">
+						<h2>Timings:</h2>
+						<ul>
+							<li>8:00PM - 10:00PM IST</li>
+							<li>9:00PM - 11:00PM IST</li>
+						</ul>
+					</div>
+					<div class="info">
+						<h2>Fees:</h2>
+						<p>Less than 4000 per month</p>
+					</div>
+					<a href="#">Apply</a>
+				</div>
+			</div>
+			<div class="program">
+				<div class="apply">
+					<div class="placement">
+						<span>100%</span>
+						<p>PLACEMENT GUARANTEE</p>
+					</div>
+					<div class="info">
+						<h2>Batch Duration:</h2>
+						<p>8 to 9 months</p>
+					</div>
+					<div class="info">
+						<h2>Starts on:</h2>
+						<p>December 20, 2023</p>
+					</div>
+					<div class="info">
+						<h2>Timings:</h2>
+						<ul>
+							<li>8:00PM - 10:00PM IST</li>
+							<li>9:00PM - 11:00PM IST</li>
+						</ul>
+					</div>
+					<div class="info">
+						<h2>Fees:</h2>
+						<p>Less than 4000 per month</p>
+					</div>
+					<a href="#">Apply</a>
+				</div>
+				<div class="details">
+					<h2>Data Science</h2>
+					<h3>Start your career in data science and AI</h3>
+					<div class="images">
+						<img src="/uploads/img/Html5.png" alt="" />
+						<img src="/uploads/img/Css.png" alt="" />
+						<img src="/uploads/img/Javascript.png" alt="" />
+						<img src="/uploads/img/React.png" alt="" />
+						<img src="/uploads/img/Nodejs.png" alt="" />
+						<img src="/uploads/img/Github.png" alt="" />
+					</div>
+					<div class="tasks">
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>HTML & CSS Fundamentals</p>
+						</div>
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>JavaScript Mastery</p>
+						</div>
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>Front-end with React.js</p>
+						</div>
+						<div class="task">
+							<img src="/uploads/img/TickMark.svg" alt="" />
+							<p>
+								Back-end with Node.js, MongoDB, and Express.js
+							</p>
+						</div>
+					</div>
+					<a href="#">Explore more</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="program-adm">
+			<img
+				src="/uploads/img/Program-adm-bg.png"
+				alt=""
+				class="background"
+			/>
+			<div class="program-2">
+				<div class="program-content">
+					<h1>Guaranteed Placement Program</h1>
+					<div class="tabs">
+						<div class="tab" id="tab-active">
+							<div class="title">Portfolio Building</div>
+							<p>
+								Establishing partnerships with tech companies
+								for job placements and career growth. Our focus
+								is on connecting our students with leading
+								industry players, providing them with valuable
+								opportunities to kickstart their careers.
+							</p>
+						</div>
+						<div class="tab">
+							<div class="title">Mock Interviews</div>
+							<p>
+								Establishing partnerships with tech companies
+								for job placements and career growth. Our focus
+								is on connecting our students with leading
+								industry players, providing them with valuable
+								opportunities to kickstart their careers.
+							</p>
+						</div>
+						<div class="tab">
+							<div class="title">Career Assistance</div>
+							<p>
+								Establishing partnerships with tech companies
+								for job placements and career growth. Our focus
+								is on connecting our students with leading
+								industry players, providing them with valuable
+								opportunities to kickstart their careers.
+							</p>
+						</div>
+					</div>
+					<div class="buttons">
+						<button class="tab-btn tab-btn-1" id="btn-active">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									class="active-svg"
+									fill="#ffffff"
+									d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+								/>
+							</svg>
+						</button>
+						<button class="tab-btn tab-btn-2">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									fill="#ffffff"
+									d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+								/>
+							</svg>
+						</button>
+						<button class="tab-btn tab-btn-3">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									fill="#ffffff"
+									d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="admission">
+				<h1>Admission Flexibilities</h1>
+				<div class="flexes">
+					<div class="flex">
+						<img src="/uploads/img/CircularTick.svg" alt="" />
+						<p>Personal mentorship</p>
+					</div>
+					<div class="flex">
+						<img src="/uploads/img/CircularTick.svg" alt="" />
+						<p>Admissions for learners from any background</p>
+					</div>
+					<div class="flex">
+						<img src="/uploads/img/CircularTick.svg" alt="" />
+						<p>
+							Easy EMI options available with options as low as
+							Rs.500
+						</p>
+					</div>
+					<div class="flex">
+						<img src="/uploads/img/CircularTick.svg" alt="" />
+						<p>Flexible course durations for Kashmiri learners</p>
+					</div>
+					<div class="flex">
+						<img src="/uploads/img/CircularTick.svg" alt="" />
+						<p>
+							Scholarship options from low income background
+							learners
+						</p>
+					</div>
+					<div class="flex">
+						<img src="/uploads/img/CircularTick.svg" alt="" />
+						<p>Flexible class timings for Kashmiri learners</p>
+					</div>
+				</div>
+				<a href="#">Apply now</a>
+			</div>
+		</div>
+
+		<div class="grid">
+			<img
+				src="/uploads/img/Rectangle 17.png"
+				alt=""
+				class="background"
+			/>
+			<div class="col col-1">
+				<div class="heading">
+					<img src="uploads/img/edulightblue1.png" alt="" />
+					<h1>EduPi School</h1>
+				</div>
+				<p>Empowering Kashmiri minds for global success</p>
+				<a href="#">Join us, now!</a>
+			</div>
+			<div class="col col-2">
+				<div class="sub-col">
+					<h2>Courses</h2>
+					<div class="items">
+						<a href="#">Full Stack Web Developement</a>
+						<a href="#">Data Science Program</a>
+						<a href="#">Masterclass</a>
+					</div>
+				</div>
+				<div class="sub-col">
+					<h2>Support</h2>
+					<div class="items">
+						<a href="#">Contact us</a>
+					</div>
+				</div>
+			</div>
+			<div class="col col-3">
+				<h2>Company</h2>
+				<div class="items">
+					<a href="#">About us</a>
+					<a href="#">Hire from us</a>
+					<a href="#">Privacy policy</a>
+					<a href="#">Terms of use</a>
+				</div>
+			</div>
+			<div class="mobile-grid">
+				<a href="#">Full Stack Web Developement</a>&nbsp;
+				<a href="#">Data Science Program</a>&nbsp;
+				<a href="#">Masterclass</a>&nbsp;
+				<a href="#">Contact us</a>&nbsp; <a href="#">About us</a>&nbsp;
+				<a href="#">Hire from us</a>&nbsp;
+				<a href="#">Privacy policy</a>&nbsp;
+				<a href="#">Terms of use</a>&nbsp;
+			</div>
+		</div>
+
+		<div class="last">
+			<a href="#"><img src="uploads/img/Facebook.png" /> </a>
+			<a href="#"><img src="uploads/img/Youtube.png" /></a>
+			<a href="#"><img src="uploads/img/Instagram.png" /></a>
+			<a href="#"><img src="uploads/img/Linkedin.png" /></a>
+		</div>
+
+		<footer>&copy; 2023. EduPi School. All rights reserved.</footer>
+
+		<script
+			src="https://kit.fontawesome.com/68129f478c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/menu.js"></script>
+	</body>
+</html>

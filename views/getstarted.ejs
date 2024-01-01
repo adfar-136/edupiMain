@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="stylesheet" href="/css/getstarted.css" />
+		<link rel="stylesheet" href="/css/footer.css" />
+		<link
+			rel="shortcut icon"
+			href="uploads/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<title>Get Started</title>
+	</head>
+	<body>
+		<div class="ham-background">
+			<div class="nav-links">
+				<button class="cross">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24"
+						width="18"
+						viewBox="0 0 384 512"
+					>
+						<path
+							fill="#002147"
+							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+						/>
+					</svg>
+				</button>
+				<div class="list">
+					<a href="/">Home</a>
+					<a href="/fsd">Full Stack Development</a>
+					<a href="/datascience">Data Science</a>
+					<a href="/about">About</a>
+					<a href="/earn">Refer and Earn</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="menu-container">
+				<div class="hamburger-menu">
+					<button class="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							width="21"
+							viewBox="0 0 448 512"
+						>
+							<path
+								fill="#002147"
+								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="logo">
+					<img src="uploads/img/edupischoollogo.png" alt="" />
+					<h1>EduPi School</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/fsd">Full Stack Development</a></li>
+						<li><a href="/datascience">Data Science</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/earn">Refer and Earn</a></li>
+					</ul>
+				</nav>
+				<div class="header-buttons">
+					<% if (user) { %>
+					<!-- Display user's profile image when logged in -->
+					<a href="/profile"
+						><img
+							src="<%= user.profileImage || '/uploads/profile.png' %>"
+							class="profile-image"
+							alt="User Profile"
+					/></a>
+					<% } else { %>
+					<!-- Show login and signup buttons when not logged in -->
+					<a href="/login" class="login-button">Login</a>
+					<a href="/signup" class="signup-button">Sign Up</a>
+					<% } %>
+				</div>
+			</div>
+		</header>
+
+		<div class="landing">
+			<div class="info">
+				<h1>Why Choose <span>EduPi</span> School?</h1>
+				<h3>
+					At EduPi School, we're dedicated to providing top-notch
+					education in Full Stack Development and Data Science &
+					Machine Learning. Our commitment to excellence extends
+					beyond the classroom with a range of features that set us
+					apart:
+				</h3>
+				<div class="features">
+					<div class="feature">
+						<p class="heading">1. 100% Placement Guarantee</p>
+						<p class="content">
+							Launch your career confidently with our
+							success-focused programs.
+						</p>
+					</div>
+					<div class="feature">
+						<p class="heading">2. One on One Mentor Sessions</p>
+						<p class="content">
+							Personalized learning through dedicated mentor
+							sessions.
+						</p>
+					</div>
+					<div class="feature">
+						<p class="heading">3. Live Online Classes</p>
+						<p class="content">
+							Real-time engagement with instructors and peers.
+						</p>
+					</div>
+					<div class="feature">
+						<p class="heading">4. Cutting-Edge Curriculum</p>
+						<p class="content">
+							Stay ahead with industry-relevant courses.
+						</p>
+					</div>
+					<div class="feature">
+						<p class="heading">5. Interactive Learning Resources</p>
+						<p class="content">
+							Hands-on learning with coding exercises and
+							projects.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="started-form">
+				<h2>Get Started Now!</h2>
+				<p class="form-info">
+					Register by filling the form below and you will be soon be
+					contacted by our counsellor.
+				</p>
+				<form method="post">
+					<p class="form-title">Enter you name and number:</p>
+					<input type="text" placeholder="Your Name" name="fullName" />
+					<input
+						type="number"
+						placeholder="Mobile Number"
+						name="phoneNumber"
+					/>
+					<p class="tnc">
+						By clicking the button below, you agree to our
+						<a target="_blank" href="/termsandcond"
+							>Terms & Conditions</a
+						>
+					</p>
+					<button class="registration-button">Get in Touch</button>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<div class="left">
+				<div class="logo">EduPi</div>
+				<div class="contact">
+					<h2>Contact</h2>
+					<address>5534 Somewhere In. The World 22193-10212</address>
+					<a href="mailto:example@gmail.com">Email Us</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="g g-1">
+					<div class="title">Media</div>
+					<div class="links">
+						<a href="#">Online</a>
+						<a href="#">Print</a>
+						<a href="#">Alternative Ads</a>
+					</div>
+				</div>
+				<div class="g g-2">
+					<div class="title">Technology</div>
+					<div class="links">
+						<a href="#">Hardware Design</a>
+						<a href="#">Software Design</a>
+						<a href="#">Digital Signature</a>
+						<a href="#">Automation</a>
+						<a href="#">Artificial-Intelligence</a>
+						<a href="#">IoT</a>
+					</div>
+				</div>
+				<div class="g g-3">
+					<div class="title">Legal</div>
+					<div class="links">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of Use</a>
+						<a href="#">Sitemap</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2019 Something. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script src="./js/menu.js"></script>
+	</body>
+</html>

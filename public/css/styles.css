@@ -1,0 +1,1732 @@
+:root {
+	--h3-font-family: "Poppins-Regular", Helvetica;
+	--h3-font-weight: 400;
+	--h3-font-size: 16px;
+	--h3-letter-spacing: 0px;
+	--h3-line-height: normal;
+	--h3-font-style: normal;
+	--h2-font-family: "Poppins-Regular", Helvetica;
+	--h2-font-weight: 400;
+	--h2-font-size: 18px;
+	--h2-letter-spacing: -0.4px;
+	--h2-line-height: 130.49999475479126%;
+	--h2-font-style: normal;
+	--h1-font-family: "Poppins-Bold", Helvetica;
+	--h1-font-weight: 700;
+	--h1-font-size: 50px;
+	--h1-letter-spacing: 1.28px;
+	--h1-line-height: 150%;
+	--h1-font-style: normal;
+	--h2-medium-font-family: "Poppins-Medium", Helvetica;
+	--h2-medium-font-weight: 500;
+	--h2-medium-font-size: 24px;
+	--h2-medium-letter-spacing: -0.48px;
+	--h2-medium-line-height: 130.49999475479126%;
+	--h2-medium-font-style: normal;
+	--h1-semi-bold-font-family: "Poppins-SemiBold", Helvetica;
+	--h1-semi-bold-font-weight: 500;
+	--h1-semi-bold-font-size: 36px;
+	--h1-semi-bold-letter-spacing: 0.74px;
+	--h1-semi-bold-line-height: 150%;
+	--h1-semi-bold-font-style: normal;
+	--drop-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.05);
+	--collection-1-color-1-use: rgba(0, 33, 71, 1);
+	--collection-1-blue: rgba(0, 33, 71, 1);
+	--collection-1-green: rgba(0, 68, 71, 1);
+	--collection-1-ligh-g: rgba(166, 207, 213, 1);
+	--collection-1-light: rgba(223, 253, 225, 1);
+	--collection-1-number: 16px;
+	--collection-1-color: rgba(30, 30, 30, 1);
+	--collection-1-color-2: rgba(254, 254, 254, 1);
+	--collection-1-scroll-color-1: rgba(255, 255, 255, 1);
+	--collection-1-scroll-color-2: rgba(0, 0, 0, 1);
+	--collection-1-scroll-color-3: rgba(253, 189, 25, 1);
+	--collection-1-scroll-color-4: rgba(30, 30, 30, 1);
+	--collection-1-scroll-color-5: rgba(223, 253, 225, 1);
+	--collection-1-scroll-color-6: rgba(0, 68, 71, 1);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins !important;
+}
+
+.home {
+	/* margin-top: 2vw; */
+	background: url("/uploads/img/Group1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding: 150px 3% 50px 3%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.home .home-info {
+	width: 47%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	gap: 25px;
+}
+.home p {
+	font-family: var(--h2-font-family);
+	font-weight: var(--h2-font-weight);
+	color: #fefefe;
+	font-size: var(--h2-font-size);
+	letter-spacing: var(--h2-letter-spacing);
+	line-height: var(--h2-line-height);
+	white-space: nowrap;
+	font-style: var(--h2-font-style);
+}
+.home h1 {
+	font-family: var(--h1-semi-bold-font-family);
+	font-weight: var(--h1-semi-bold-font-weight);
+	color: #fefefe;
+	font-size: var(--h1-semi-bold-font-size);
+	letter-spacing: var(--h1-semi-bold-letter-spacing);
+	line-height: var(--h1-semi-bold-line-height);
+	font-style: var(--h1-semi-bold-font-style);
+}
+.home a {
+	text-decoration: none;
+	border-radius: 25px;
+	align-self: baseline;
+	padding: 20px 30px;
+	display: inline-block;
+	background-color: var(--collection-1-light);
+	font-family: var(--h2-medium-font-family);
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-blue);
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	white-space: nowrap;
+	font-style: var(--h2-medium-font-style);
+}
+.home a:hover {
+	background-color: #f2f2f2;
+}
+.home .home-logo {
+	width: 47%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: end;
+}
+.home img {
+	position: relative;
+	top: -2vw;
+	width: 29vw;
+	height: 29vw;
+}
+
+.school {
+	position: relative;
+	margin-top: 2vw;
+}
+.school .background {
+	position: absolute;
+	top: -45.53vw;
+	width: 100%;
+	z-index: -5;
+}
+.school .school-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.3vw;
+	justify-content: center;
+	align-items: center;
+	margin: 4vw 5.21vw 3vw;
+	padding: 3.255vw 5.21vw;
+	border-radius: 35px;
+	background: var(--collection-1-ligh-g);
+	font-family: var(--h2-font-family);
+	font-weight: 400;
+	color: var(--collection-1-color-1-use);
+	font-size: var(--h2-font-size);
+	letter-spacing: var(--h2-letter-spacing);
+	line-height: var(--h2-line-height);
+	font-style: var(--h2-font-style);
+}
+.school h1 {
+	font-family: var(--h1-font-family);
+	font-weight: var(--h1-font-weight);
+	color: var(--collection-1-blue);
+	font-size: var(--h1-font-size);
+	text-align: center;
+	letter-spacing: var(--h1-letter-spacing);
+	line-height: var(--h1-line-height);
+	white-space: nowrap;
+	font-style: var(--h1-font-style);
+}
+.school p {
+}
+.school p span {
+	font-size: 24px;
+}
+
+.success {
+	position: relative;
+	margin-top: -5vw;
+	padding-top: 32.55vw;
+}
+.success .background {
+	position: absolute;
+	top: -38vw;
+	width: 100%;
+	z-index: -15;
+}
+.success .success-content {
+	margin-top: -10vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.success .success-content h1 {
+	font-family: var(--h1-font-family);
+	font-weight: var(--h1-font-weight);
+	color: var(--collection-1-light);
+	font-size: var(--h1-font-size);
+	text-align: center;
+	letter-spacing: var(--h1-letter-spacing);
+	line-height: var(--h1-line-height);
+	white-space: nowrap;
+	font-style: var(--h1-font-style);
+}
+.success .tabs {
+	margin-top: 50px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+}
+.success .buttons {
+	display: none;
+}
+.success .tabs .tab {
+	background: var(--collection-1-ligh-g);
+	padding: 30px;
+	border-radius: 25px;
+	width: 25%;
+	height: 30.04vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.success .title {
+	font-family: var(--h2-medium-font-family);
+	font-weight: var(--h2-medium-font-weight);
+	color: #000000;
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	font-style: var(--h2-medium-font-style);
+}
+.success p {
+	font-family: var(--h2-font-family);
+	font-weight: var(--h2-font-weight);
+	color: #000000;
+	font-size: var(--h2-font-size);
+	letter-spacing: var(--h2-letter-spacing);
+	line-height: var(--h2-line-height);
+	font-style: var(--h2-font-style);
+}
+
+.programs {
+	position: relative;
+	display: flex;
+	gap: 2.28vw;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 19vw;
+}
+.programs .background {
+	position: absolute;
+	top: -23vw;
+	width: 100%;
+	z-index: -20;
+}
+.programs h1 {
+	font-family: var(--h1-font-family);
+	font-weight: var(--h1-font-weight);
+	color: var(--collection-1-green);
+	font-size: var(--h1-font-size);
+	text-align: center;
+	letter-spacing: var(--h1-letter-spacing);
+	line-height: var(--h1-line-height);
+	white-space: nowrap;
+	font-style: var(--h1-font-style);
+}
+.programs .program {
+	display: flex;
+	flex-direction: row;
+	gap: 2vw;
+}
+.programs .details {
+	padding: 3.255vw 4.557vw;
+	width: 50vw;
+	background: var(--collection-1-color-2);
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3.255vw;
+	flex-direction: column;
+}
+.programs .apply {
+	padding: 3.255vw;
+	width: 25vw;
+	border-radius: 30px;
+	text-align: center;
+	background: var(--collection-1-color-2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.627vw;
+}
+.programs .details h2 {
+	font-family: var(--h1-semi-bold-font-family);
+	font-weight: var(--h1-semi-bold-font-weight);
+	color: var(--collection-1-green);
+	font-size: var(--h1-semi-bold-font-size);
+	letter-spacing: var(--h1-semi-bold-letter-spacing);
+	line-height: var(--h1-semi-bold-line-height);
+	font-style: var(--h1-semi-bold-font-style);
+}
+.programs .details h3 {
+	font-family: var(--h2-medium-font-family);
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-green);
+	font-size: var(--h2-medium-font-size);
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	font-style: var(--h2-medium-font-style);
+}
+.programs .images {
+	display: flex;
+	flex-direction: row;
+	gap: 1.3vw;
+}
+.programs .tasks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.3vw;
+}
+.programs .tasks .task {
+	display: flex;
+	flex-direction: row;
+	gap: 1.3vw;
+	align-items: center;
+}
+.programs .tasks img {
+	width: 3.255vw;
+	height: 2.6vw;
+}
+.programs .details a {
+	padding: 0.976vw 3.255vw;
+	background-color: var(--collection-1-blue);
+	text-decoration: none;
+	border-radius: 25px;
+	font-family: var(--h2-medium-font-family);
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-color-2);
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	white-space: nowrap;
+	font-style: var(--h2-medium-font-style);
+}
+
+.programs .placement {
+	background-color: var(--collection-1-light);
+	margin-top: -15px;
+	padding: 1.3vw 1.953vw;
+	border-radius: 50%;
+	color: var(--collection-1-green);
+}
+.programs .placement span {
+	font-weight: 600;
+	letter-spacing: var(--h1-semi-bold-letter-spacing);
+	line-height: var(--h1-semi-bold-line-height);
+	font-family: var(--h1-semi-bold-font-family);
+	font-style: var(--h1-semi-bold-font-style);
+	font-size: var(--h1-semi-bold-font-size);
+}
+.programs .placement p {
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+	line-height: 24px;
+}
+.programs .apply .info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+	color: var(--collection-1-green);
+}
+.programs .apply .info h2 {
+	font-weight: 400;
+	font-size: var(--h2-medium-font-size);
+	line-height: 24px;
+}
+.programs .apply .info p,
+.programs .apply .info li {
+	font-family: var(--h2-font-family);
+	font-size: var(--h2-font-size);
+	letter-spacing: var(--h2-letter-spacing);
+	line-height: var(--h2-line-height);
+	font-style: var(--h2-font-style);
+	font-weight: var(--h2-font-weight);
+}
+.programs .apply .info li {
+	width: 100%;
+	margin-left: 25px;
+	text-align: justify;
+}
+.programs .apply a {
+	padding: 0.976vw 2.6vw;
+	width: 100%;
+	background-color: var(--collection-1-blue);
+	text-decoration: none;
+	border-radius: 25px;
+	font-family: var(--h2-medium-font-family);
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-color-2);
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	white-space: nowrap;
+	font-style: var(--h2-medium-font-style);
+}
+
+.program-adm {
+	position: relative;
+	margin-top: 32.55vw;
+}
+.program-adm .background {
+	position: absolute;
+	width: 100%;
+	top: -45.57vw;
+	z-index: -25;
+}
+.program-adm .program-2 .program-content {
+	margin-top: -10vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.program-adm .program-2 .program-content h1 {
+	font-family: var(--h1-font-family);
+	font-weight: var(--h1-font-weight);
+	color: var(--collection-1-blue);
+	font-size: var(--h1-font-size);
+	text-align: center;
+	letter-spacing: var(--h1-letter-spacing);
+	line-height: var(--h1-line-height);
+	white-space: nowrap;
+	font-style: var(--h1-font-style);
+}
+.program-adm .program-2 .program-content .tabs {
+	margin-top: 3.255vw;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	gap: 2.6vw;
+	justify-content: center;
+}
+.program-adm .program-2 .program-content .tab {
+	background: var(--collection-1-blue);
+	padding: 1.953vw;
+	border-radius: 25px;
+	width: 25%;
+	height: 30.04vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.program-adm .program-2 .program-content .title {
+	font-family: var(--h2-medium-font-family);
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-color-2);
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	font-style: var(--h2-medium-font-style);
+}
+.program-adm .program-2 .program-content p {
+	font-family: var(--h2-font-family);
+	font-weight: 200;
+	color: var(--collection-1-color-2);
+	font-size: var(--h2-font-size);
+	letter-spacing: 1px;
+	line-height: var(--h2-line-height);
+	font-style: var(--h2-font-style);
+}
+.program-2 .buttons {
+	display: none;
+}
+.program-adm .admission {
+	margin-top: 6.51vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2.6vw;
+}
+.program-adm .admission h1 {
+	font-family: var(--h1-font-family);
+	font-weight: var(--h1-font-weight);
+	color: var(--collection-1-green);
+	font-size: var(--h1-font-size);
+	text-align: center;
+	letter-spacing: var(--h1-letter-spacing);
+	line-height: var(--h1-line-height);
+	white-space: nowrap;
+	font-style: var(--h1-font-style);
+}
+.program-adm .admission .flexes {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3.906vw;
+	width: 80%;
+	margin: 50px 10% 50px 10%;
+	text-align: center;
+}
+.program-adm .admission .flex {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	height: 5.21vw;
+}
+.program-adm .admission .flex p {
+	padding: 1.3vw 1.953vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+	width: 100%;
+	text-align: left;
+	background-color: var(--collection-1-green);
+	color: #f2f2f2;
+}
+
+.program-adm .admission a {
+	margin: auto;
+	padding: 0.976vw 4vw;
+	background-color: var(--collection-1-blue);
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-color-2);
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	white-space: nowrap;
+	font-style: var(--h2-medium-font-style);
+}
+
+.grid {
+	position: relative;
+	margin-top: 6.51vw;
+	padding: 16.276vw 10% 6.51vw;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 4fr 2fr 2fr;
+}
+.grid .background {
+	position: absolute;
+	top: -11vw;
+	z-index: -30;
+	width: 100%;
+}
+.grid .col {
+	display: flex;
+	flex-direction: column;
+}
+.grid .col-1 {
+	gap: 1.3vw;
+}
+.grid .col-1 .heading {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: flex-end;
+}
+.grid .col-1 img {
+	height: 5.86vw;
+}
+.grid .col-1 h1 {
+	color: var(--collection-1-ligh-g);
+	font-size: 32px;
+	font-weight: 500;
+}
+.grid .col-1 p {
+	color: var(--collection-1-ligh-g);
+	font-size: 24px;
+	font-weight: 300;
+}
+.grid .col-1 a {
+	margin-top: 1vw;
+	margin: 1vw auto 1vw 0px;
+	padding: 0.976vw 4vw;
+	background-color: var(--collection-1-light);
+	text-decoration: none;
+	border-radius: 25px;
+	font-weight: var(--h2-medium-font-weight);
+	color: var(--collection-1-blue);
+	font-size: var(--h2-medium-font-size);
+	text-align: center;
+	letter-spacing: var(--h2-medium-letter-spacing);
+	line-height: var(--h2-medium-line-height);
+	white-space: nowrap;
+}
+.grid .col-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 1.3vw;
+}
+.grid .col-2 h2,
+.grid .col-3 h2 {
+	color: #f2f2f2;
+	font-size: 1.82vw;
+	font-weight: 300;
+}
+.grid .items {
+	margin-top: 10px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.78vw;
+}
+.grid .col-2 a,
+.grid .col-3 a {
+	text-decoration: none;
+	color: #f2f2f2;
+	font-size: 16px;
+	transition: all 200ms;
+	text-decoration: underline;
+}
+.grid .col-2 a:hover,
+.grid .col-3 a:hover {
+	scale: 1.05;
+}
+.mobile-grid {
+	display: none;
+}
+.last {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1.95vw;
+}
+.last img {
+	transition: all 100ms;
+}
+.last img:hover {
+	scale: 1.1;
+}
+footer {
+	background-color: var(--collection-1-ligh-g);
+	color: var(--collection-1-blue);
+	font-size: 16px;
+	height: 3.91vw;
+	margin-top: 2.6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* media queries */
+@media only screen and (max-width: 1475px) {
+	.school .background {
+		top: -42.53vw;
+	}
+	.programs .background {
+		top: -21vw;
+	}
+}
+@media only screen and (max-width: 1425px) {
+	.school .background {
+		top: -40vw;
+	}
+	.programs .background {
+		top: -19vw;
+	}
+}
+@media only screen and (max-width: 1376px) {
+	.home {
+		padding-bottom: 8vw;
+	}
+	.school .background {
+		top: -37vw;
+	}
+	.success .background {
+		top: -35vw;
+	}
+	.success {
+		margin-top: -2vw;
+	}
+	.programs .background {
+		top: -15vw;
+	}
+	.programs {
+		margin-top: 5vw;
+	}
+}
+@media only screen and (max-width: 1335px) {
+	.school .background {
+		top: -34vw;
+	}
+	.grid {
+		margin-top: 9vw;
+	}
+	.last {
+		margin-top: -1vw;
+	}
+}
+@media only screen and (max-width: 1305px) {
+	.programs .background {
+		top: -14vw;
+	}
+	.programs .placement {
+		padding: 1.8vw 2vw;
+	}
+	.programs .tasks {
+		gap: 1vw;
+	}
+	.programs .tasks .task {
+		gap: 0.1vw;
+	}
+	.program-adm .background {
+		top: -43vw;
+	}
+	.school .background {
+		top: -40vw;
+	}
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 16px;
+		--h1-font-size: 40px;
+		--h2-medium-font-size: 22px;
+		--h1-semi-bold-font-size: 36px;
+	}
+}
+@media only screen and (max-width: 1235px) {
+	.school .background {
+		top: -38vw;
+	}
+	.programs .background {
+		top: -12vw;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 35px;
+	}
+	.last {
+		margin-top: -4vw;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.programs .background {
+		top: -10vw;
+	}
+	.programs .tasks .task p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1175px) {
+	.school .background {
+		top: -35vw;
+	}
+}
+@media only screen and (max-width: 1150px) {
+	.home {
+		padding-bottom: 11vw;
+	}
+	.home img {
+		top: 5vw;
+	}
+	.school .background {
+		top: -33vw;
+	}
+	.success .background {
+		top: -29vw;
+	}
+	.success .tabs .tab {
+		height: 36vw;
+	}
+	.programs .background {
+		top: -8vw;
+	}
+	.program-adm .background {
+		top: -35vw;
+	}
+	.program-adm .program-2 .program-content .tab {
+		height: 38vw;
+	}
+}
+@media only screen and (max-width: 1120px) {
+	.programs .placement p {
+		font-size: 20px;
+	}
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 16px;
+		--h1-font-size: 40px;
+		--h2-medium-font-size: 20px;
+		--h1-semi-bold-font-size: 30px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.programs .background {
+		top: -5vw;
+	}
+}
+@media only screen and (max-width: 1070px) {
+	.school .background {
+		top: -30vw;
+	}
+	.programs .background {
+		top: -1vw;
+	}
+}
+@media only screen and (max-width: 1010px) {
+	.program-adm .admission .flexes {
+		gap: 3vw;
+		width: 86%;
+		margin: 50px 7% 50px 7%;
+	}
+	.program-adm .admission .flex p {
+		padding: 30px 35px;
+	}
+	.last img {
+		height: 30px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.programs .background {
+		top: 2vw;
+	}
+	.programs .details {
+		padding: 3vw 2.5vw;
+		width: 53vw;
+	}
+	.programs .details img {
+		width: 40px;
+	}
+	.school p {
+		font-size: 14px;
+	}
+	.school p span {
+		font-size: 20px;
+	}
+	.grid .background {
+		top: -9.5vw;
+	}
+}
+@media only screen and (max-width: 970px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 14px;
+		--h1-font-size: 34px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 30px;
+	}
+	.school .background {
+		top: -31vw;
+	}
+	.programs .background {
+		top: -3vw;
+	}
+	.grid .background {
+		top: -11vw;
+	}
+	.grid .col-1 p {
+		font-size: 20px;
+	}
+	.grid .col-1 h1 {
+		font-size: 28px;
+	}
+	.grid .col-2 h2,
+	.grid .col-3 h2 {
+		font-size: 18px;
+	}
+	.grid .col-2 a,
+	.grid .col-3 a {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 950px) {
+	.success .tabs .tab {
+		height: 40vw;
+	}
+	.success .background {
+		top: -24vw;
+	}
+	.programs .background {
+		top: -1vw;
+	}
+	.programs .apply {
+		padding: 3.5vw;
+		width: 29vw;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 35px;
+		font-size: 12px;
+	}
+	.program-adm .program-2 .program-content .tab {
+		height: 45vw;
+	}
+	.program-adm .background {
+		top: -29vw;
+	}
+	footer {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 950px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 14px;
+		--h1-font-size: 34px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 26px;
+	}
+	.home {
+		margin-top: 0vw;
+	}
+	.grid .background {
+		top: -10vw;
+	}
+}
+@media only screen and (max-width: 890px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 14px;
+		--h1-font-size: 32px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 24px;
+	}
+	.home .home-info {
+		width: 55%;
+	}
+	.home .home-logo {
+		width: 39%;
+	}
+	.home a {
+		padding: 12px 30px;
+	}
+	.programs .background {
+		top: 1vw;
+	}
+	.program-adm .background {
+		top: -34vw;
+	}
+	.program-adm .admission .flexes {
+		gap: 4vw;
+		margin: 25px 7% 40px 7%;
+	}
+	.program-adm .admission {
+		gap: 0vw;
+	}
+	.last {
+		margin-top: -3vw;
+	}
+	.last img {
+		height: 25px;
+	}
+	.grid .background {
+		top: -6.2vw;
+	}
+}
+@media only screen and (max-width: 865px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 12px;
+		--h1-font-size: 28px;
+		--h2-medium-font-size: 14px;
+		--h1-semi-bold-font-size: 20px;
+	}
+	.school .background {
+		top: -33vw;
+	}
+	.school p {
+		font-size: 12px;
+	}
+	.programs .background {
+		top: -2vw;
+	}
+	.programs .tasks .task p {
+		font-size: 11px;
+	}
+	.program-adm .background {
+		top: -35vw;
+	}
+	.grid .background {
+		top: -10vw;
+	}
+	.grid .col-1 h1 {
+		font-size: 24px;
+	}
+	.grid .col-1 p {
+		font-size: 16px;
+	}
+	.grid .col-2 a,
+	.grid .col-3 a {
+		font-size: 12px;
+	}
+	.grid .col-2 h2,
+	.grid .col-3 h2 {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 11px;
+		--h1-font-size: 26px;
+		--h2-medium-font-size: 14px;
+		--h1-semi-bold-font-size: 20px;
+	}
+	.home {
+		margin-top: -56px;
+	}
+	.school p {
+		font-size: 11px;
+	}
+	.school p span {
+		font-size: 16px;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 25px;
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.programs .background {
+		top: 1vw;
+	}
+	.grid .background {
+		top: -8vw;
+	}
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 12px;
+		--h1-font-size: 30px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 22px;
+	}
+	.home {
+		margin-top: -40px;
+		padding-bottom: 150px;
+	}
+	#para-4 {
+		display: none;
+	}
+	.school .background {
+		top: -32vw;
+	}
+	.school .school-content {
+		gap: 1.5vw;
+	}
+	.school p span {
+		font-size: 18px;
+	}
+	.school p {
+		font-size: 13px;
+	}
+	.success .tabs .tab {
+		padding: 20px;
+	}
+	.programs {
+		gap: 4vw;
+	}
+	.programs .apply {
+		display: none;
+	}
+	.programs .details {
+		padding: 3vw 4vw;
+		width: 75vw;
+	}
+	.programs .tasks .task p {
+		font-size: 13px;
+	}
+	.programs .background {
+		top: -8vw;
+	}
+	.program-adm .program-2 .program-content .tabs {
+		gap: 40px;
+	}
+	.grid .background {
+		top: -40px;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.school .background {
+		top: -200px;
+	}
+	.programs .background {
+		top: -7vw;
+	}
+	.program-adm .background {
+		top: -220px;
+	}
+	.grid .background {
+		top: -22px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	#para-3 {
+		display: none;
+	}
+	.school .background {
+		top: -270px;
+	}
+	.success .background {
+		top: -22vw;
+	}
+	.programs .background {
+		top: -4vw;
+	}
+	.program-adm .program-2 .program-content {
+		margin-top: -6vw;
+	}
+	.grid {
+		margin-top: 4vw;
+	}
+	.grid .col-1 h1 {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 660px) {
+	.school .background {
+		top: -250px;
+	}
+	.success .background {
+		top: -12vw;
+	}
+	.success .tabs {
+		gap: 25px;
+	}
+	.success .tabs .tab {
+		width: 28%;
+		height: 48vw;
+	}
+	.programs .background {
+		top: -0vw;
+	}
+	.programs .details {
+		width: 82vw;
+	}
+	.programs .tasks .task {
+		display: grid;
+		grid-template-columns: 40px auto;
+		align-items: center;
+	}
+	.program-adm .program-2 .program-content .tabs {
+		gap: 20px;
+	}
+	.program-adm .program-2 .program-content .tab {
+		width: 28%;
+		height: 50vw;
+	}
+	.program-adm .background {
+		top: -150px;
+	}
+	.grid {
+		margin-top: 8vw;
+	}
+	.grid .background {
+		top: -10px;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.school .background {
+		top: -225px;
+	}
+	.success {
+		margin-top: 25px;
+	}
+	.programs .background {
+		top: 2.5vw;
+	}
+	.program-adm .program-2 .program-content .tab {
+		height: 55vw;
+	}
+	.program-adm .background {
+		top: -75px;
+	}
+	.program-adm .admission .flexes {
+		margin: 25px 5% 40px 5%;
+		width: 90%;
+		column-gap: 3vw;
+		row-gap: 4vw;
+	}
+	.program-adm .admission .flex {
+		gap: 4px;
+		height: 7.21vw;
+	}
+	.grid .background {
+		top: -12px;
+	}
+	.grid {
+		margin-top: 6.51vw;
+		padding: 16.276vw 7% 7vw;
+	}
+	.last {
+		margin-top: -4vw;
+	}
+}
+@media only screen and (max-width: 620px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 10px;
+		--h1-font-size: 28px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 22px;
+	}
+	.home p {
+		font-size: 12px;
+	}
+	.school p {
+		line-height: 1.2;
+	}
+	.school .background {
+		top: -205px;
+	}
+	.programs {
+		margin-top: -1vw;
+	}
+	.programs .details {
+		padding: 3vw 3vw;
+		width: 75vw;
+	}
+	.programs .background {
+		top: 11vw;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 20px;
+		font-size: 10px;
+	}
+	.last img {
+		height: 20px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.school .background {
+		top: -180px;
+	}
+	.programs {
+		padding-top: 24vw;
+	}
+	.programs .background {
+		top: -5vw;
+	}
+	.programs .details {
+		padding: 3vw 3vw;
+		width: 78vw;
+	}
+	.programs .details h3 {
+		display: none;
+	}
+	.programs .details img {
+		width: 32px;
+	}
+	.programs .tasks .task {
+		grid-template-columns: 30px auto;
+	}
+	.programs .tasks .task p {
+		font-size: 12px;
+	}
+	.grid .background {
+		top: -2px;
+	}
+	.grid .col-1 img {
+		height: 35px;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.school .background {
+		top: -195px;
+	}
+	.school p span {
+		font-size: 16px;
+	}
+	.school p {
+		font-size: 12px;
+	}
+	.programs .details {
+		width: 82vw;
+	}
+	.program-adm .background {
+		top: -55px;
+	}
+	.grid .background {
+		top: 4px;
+	}
+	footer {
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 555px) {
+	.school .background {
+		top: -170px;
+	}
+	.school .school-content {
+		padding: 3.255vw 5.21vw;
+	}
+	.grid .background {
+		top: -24px;
+	}
+	.grid .col-1 p {
+		font-size: 14px;
+	}
+	.grid .items {
+		margin-top: 0px;
+	}
+	.grid .col-2 h2,
+	.grid .col-3 h2 {
+		font-size: 14px;
+	}
+	.grid .col-2 a,
+	.grid .col-3 a {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 545px) {
+	.school .background {
+		top: -140px;
+	}
+	.success .background {
+		top: -6vw;
+	}
+	.success .tabs {
+		gap: 15px;
+	}
+	.success .tabs .tab {
+		width: 30%;
+		height: 52vw;
+	}
+	.programs .background {
+		top: 1vw;
+	}
+	.program-adm .program-2 .program-content .tabs {
+		gap: 15px;
+	}
+	.program-adm .program-2 .program-content .tab {
+		width: 30%;
+	}
+	.program-adm .admission .flex img {
+		width: 30px;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 13px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 10px;
+		--h1-font-size: 24px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 22px;
+	}
+	.program-adm .background {
+		top: -35px;
+	}
+	#para-5 {
+		display: none;
+	}
+	.school .school-content {
+		border-radius: 20px;
+	}
+	.school .background {
+		top: -200px;
+	}
+	.programs .details {
+		width: 88vw;
+	}
+	.grid .background {
+		top: -10px;
+	}
+}
+@media only screen and (max-width: 495px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 12px;
+		--h1-font-size: 24px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 22px;
+	}
+	.school .background {
+		top: -180px;
+	}
+	.success .tabs {
+		margin-top: 20px;
+	}
+	.success .tabs .tab {
+		display: none;
+		width: 75%;
+		height: 45vw;
+	}
+	.success .background {
+		top: -10vw;
+	}
+	#tab-active {
+		display: flex;
+	}
+	.success .buttons {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+	.tab-btn {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	.success .tab-btn path {
+		fill: white;
+	}
+	.success .tab-btn svg {
+		width: 10px;
+	}
+	.success .tab-btn .active-svg {
+		fill: var(--collection-1-blue);
+	}
+	.program-2 .tabs {
+		margin-top: 20px;
+	}
+	.program-adm .program-2 .program-content .tab {
+		display: none;
+		width: 75%;
+	}
+	.program-2 .buttons {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+	.program-2 .tab-btn path {
+		fill: lightgray;
+	}
+	.program-2 .tab-btn svg {
+		width: 10px;
+	}
+	.program-2 .tab-btn .active-svg {
+		fill: var(--collection-1-blue);
+	}
+	.programs .images {
+		display: none;
+	}
+	.programs .tasks {
+		grid-template-columns: 1fr;
+	}
+	.programs .tasks .task p {
+		font-size: 14px;
+	}
+	.programs .tasks img {
+		height: 3.6vw;
+	}
+	.program-adm .admission .flex p {
+		font-size: 12px;
+	}
+	.program-adm .admission .flex img {
+		width: 50px;
+	}
+	.program-adm .admission .flexes {
+		grid-template-columns: 1fr;
+		margin: 25px 10% 30px 10%;
+		width: 80%;
+		column-gap: 15px;
+		row-gap: 20px;
+	}
+	.program-adm .background {
+		top: 170px;
+	}
+	.grid .background {
+		top: -10px;
+	}
+	.grid {
+		margin-top: 9.51vw;
+	}
+}
+@media only screen and (max-width: 475px) {
+	.home {
+		background-position: left bottom;
+	}
+	.home .home-logo {
+		display: none;
+	}
+	.home .home-info {
+		width: 90%;
+	}
+	.home a {
+		align-self: center;
+	}
+	.school {
+		margin-top: -5vw;
+	}
+	.school .background {
+		top: -155px;
+	}
+	.programs .background {
+		top: 3vw;
+	}
+	.program-adm .program-2 .program-content h1 {
+		width: 75%;
+		white-space: pre-wrap;
+	}
+	.program-adm .background {
+		top: 210px;
+	}
+}
+@media only screen and (max-width: 455px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 12px;
+		--h1-font-size: 24px;
+		--h2-medium-font-size: 14px;
+		--h1-semi-bold-font-size: 22px;
+	}
+	.school .background {
+		top: -130px;
+	}
+	.programs .tasks .task p {
+		font-size: 13px;
+	}
+	.programs .background {
+		top: 5vw;
+	}
+	.grid .col-2,
+	.grid .col-3 {
+		display: none;
+	}
+	.grid {
+		display: flex;
+		margin: auto;
+		margin-top: 100px;
+		flex-direction: column;
+		padding: 0px;
+		align-items: center;
+	}
+	.grid .background {
+		top: -70px;
+	}
+	.grid .col-1 a {
+		align-self: center;
+		margin: 5px auto;
+	}
+	.mobile-grid {
+		display: flex;
+		width: 85%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.mobile-grid a {
+		font-size: 10px;
+		color: #f2f2f2;
+		text-decoration: underline;
+	}
+	.last {
+		margin-top: 0vw;
+	}
+}
+@media only screen and (max-width: 425px) {
+	#para-2 {
+		display: none;
+	}
+	.school p {
+		font-size: 14px;
+	}
+	.school p span {
+		font-size: 18px;
+	}
+	.school .background {
+		top: -160px;
+	}
+	.programs .tasks .task p {
+		font-size: 12px;
+	}
+	.program-adm .background {
+		top: 350px;
+	}
+	.program-adm .admission .flex {
+		height: 12vw;
+	}
+	.program-adm .admission .flex p {
+		font-size: 11px;
+		padding: 20px 15px;
+		justify-content: start;
+	}
+	.grid .background {
+		top: -80px;
+	}
+	.grid .col-1 h1 {
+		font-size: 14px;
+	}
+	.grid .col-1 img {
+		height: 30px;
+	}
+	.grid .col-1 p {
+		font-size: 12px;
+	}
+	.grid .col-1 a {
+		padding: 2px 15px;
+		font-size: 12px;
+	}
+	.last img {
+		height: 12px;
+	}
+	footer {
+		font-size: 10px;
+		margin: 0px;
+	}
+}
+@media only screen and (max-width: 395px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 12px;
+		--h1-font-size: 22px;
+		--h2-medium-font-size: 14px;
+		--h1-semi-bold-font-size: 20px;
+	}
+	.school p {
+		font-size: 13px;
+	}
+	.school p span {
+		font-size: 17px;
+	}
+	.programs .details {
+		gap: 4vw;
+	}
+	.programs .details h3 {
+		display: block;
+	}
+	.programs .details a {
+		padding: 2vw 4vw;
+	}
+	.programs .tasks {
+		display: none;
+	}
+	.programs .background {
+		top: -17vw;
+	}
+	.program-adm .background {
+		top: 335px;
+	}
+	.grid {
+		margin-top: 80px;
+	}
+	.grid .background {
+		top: -55px;
+	}
+}
+@media only screen and (max-width: 391px) {
+	.mobile-grid a {
+		font-size: 8px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.school .background {
+		top: -145px;
+	}
+	.success .background {
+		top: -5vw;
+	}
+	.grid .background {
+		top: -44px;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.school {
+		margin-top: -7vw;
+	}
+	.school .background {
+		top: -145px;
+	}
+	.programs .background {
+		top: -16vw;
+	}
+	.success .tabs .tab {
+		width: 80%;
+		height: 55vw;
+	}
+	.success .background {
+		top: 3vw;
+	}
+	.program-adm .program-2 .program-content .tab {
+		height: 60vw;
+	}
+	.program-adm .background {
+		top: 355px;
+	}
+}
+@media only screen and (max-width: 371px) {
+	.school p {
+		font-size: 12px;
+	}
+	.school p span {
+		font-size: 16px;
+	}
+	.success .background {
+		top: 0vw;
+	}
+	.success .tabs .tab {
+		padding: 10px;
+		height: 50vw;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.home p {
+		font-size: 10px;
+		text-wrap: wrap;
+	}
+	.school p {
+		font-size: 10px;
+	}
+	.school p span {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 333px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 10px;
+		--h1-font-size: 20px;
+		--h2-medium-font-size: 12px;
+		--h1-semi-bold-font-size: 16px;
+	}
+	.school .school-content {
+		margin: 4vw 2vw 3vw;
+	}
+	.grid .background {
+		top: -30px;
+	}
+	.program-adm .admission .flex p {
+		font-size: 10px;
+		padding: 10px 15px;
+		justify-content: start;
+	}
+	.program-adm .admission .flex img {
+		width: 40px;
+	}
+}

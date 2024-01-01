@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= user.name %></title>
+		<link
+			rel="shortcut icon"
+			href="uploads/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="stylesheet" href="/css/profile.css" />
+	</head>
+	<body>
+		<div class="ham-background">
+			<div class="nav-links">
+				<button class="cross">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24"
+						width="18"
+						viewBox="0 0 384 512"
+					>
+						<path
+							fill="#002147"
+							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+						/>
+					</svg>
+				</button>
+				<div class="list">
+					<a href="/">Home</a>
+					<a href="/fsd">Full Stack Development</a>
+					<a href="/datascience">Data Science</a>
+					<a href="/about">About</a>
+					<a href="/earn">Refer and Earn</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="menu-container">
+				<div class="hamburger-menu">
+					<button class="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							width="21"
+							viewBox="0 0 448 512"
+						>
+							<path
+								fill="#002147"
+								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="logo">
+					<img src="uploads/img/edupischoollogo.png" alt="" />
+					<h1>EduPi School</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/fsd">Full Stack Development</a></li>
+						<li><a href="/datascience">Data Science</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/earn">Refer and Earn</a></li>
+					</ul>
+				</nav>
+				<div class="header-buttons">
+					<a href="/logout" class="logout-button">Logout</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="profile">
+			<div class="picture">
+				<div class="picture-header">Profile Picture</div>
+				<div class="picture-body">
+					<img
+						src="<%= user.profileImage || '/uploads/profile.png' %>"
+						alt="User Profile Image"
+					/>
+					<button
+						class="edit-profile-picture"
+						onclick="updateProfile('profileImage')"
+					>
+						Update Profile Picture
+					</button>
+				</div>
+			</div>
+			<div class="details">
+				<div class="details-header">Profile Details</div>
+				<div class="details-body">
+					<div class="detail" id="name">
+						<div class="detail-name">Name :</div>
+						<div class="detail-value"><%= user.name %></div>
+					</div>
+					<div class="detail" id="email">
+						<div class="detail-name">Email :</div>
+						<div class="detail-value"><%= user.username %></div>
+					</div>
+					<div class="detail" id="number">
+						<div class="detail-name">Phone Number :</div>
+						<div class="detail-value">
+							<%= user.phoneNumber ?? `Not Found` %>
+						</div>
+						<div
+							class="detail-edit"
+							onclick="updateProfile('phoneNumber')"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="detail" id="address">
+						<div class="detail-name">Address :</div>
+						<div class="detail-value">
+							<%= user.address ?? `Not Found` %>
+						</div>
+						<div
+							class="detail-edit"
+							onclick="updateProfile('address')"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="detail" id="about">
+						<div class="detail-name">About :</div>
+						<div class="detail-value">
+							<%= user.about ?? `Not Found` %>
+						</div>
+						<div
+							class="detail-edit"
+							onclick="updateProfile('about')"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="detail" id="skills">
+						<div class="detail-name">Skills :</div>
+						<div class="detail-value">
+							<% if (user.skills && user.skills.length > 0) { %>
+							<ul id="skills-list">
+								<% user.skills.forEach(skill => { %>
+								<li><%= skill.toUpperCase() %></li>
+								<% }); %>
+							</ul>
+							<% } else { %>
+							<p>No skills available.</p>
+							<% } %>
+						</div>
+						<div
+							class="detail-edit"
+							onclick="updateProfile('skills')"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+								/>
+							</svg>
+						</div>
+					</div>
+					<div class="detail" id="interests">
+						<div class="detail-name">Interests :</div>
+						<div class="detail-value">
+							<% if (user.interests && user.interests.length > 0)
+							{ %>
+							<ul id="interests-list">
+								<% user.interests.forEach(interest => { %>
+								<li><%= interest.toUpperCase() %></li>
+								<% }); %>
+							</ul>
+							<% } else { %>
+							<p>No interests available.</p>
+							<% } %>
+						</div>
+						<div
+							class="detail-edit"
+							onclick="updateProfile('interests')"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="16"
+								width="16"
+								viewBox="0 0 512 512"
+							>
+								<path
+									d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<form method="post" class="edit-form">
+			<div class="edit-background"></div>
+			<div class="form">
+				<div class="detail-title">Detail Name</div>
+				<div class="input-info">
+					Information on how to type/what file to upload
+				</div>
+				<input
+				    id="inputUpdate"
+					type="text"
+					required
+					placeholder="Enter your 'detail' here"
+				/>
+				<div class="form-error">*Error</div>
+				<div class="btns">
+					<button class="cancel-detail">Cancel</button>
+					<button class="update-detail">Submit</button>
+				</div>
+			</div>
+		</form>
+		<script src="/js/profile.js"></script>
+		<script src="./js/menu.js"></script>
+		<script
+			src="https://kit.fontawesome.com/68129f478c.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="uploads/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="stylesheet" href="/css/about.css" />
+		<link rel="stylesheet" href="/css/footer.css" />
+		<title>EduPiSchool</title>
+	</head>
+	<body>
+		<div class="ham-background">
+			<div class="nav-links">
+				<button class="cross">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24"
+						width="18"
+						viewBox="0 0 384 512"
+					>
+						<path
+							fill="#002147"
+							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+						/>
+					</svg>
+				</button>
+				<div class="list">
+					<a href="/">Home</a>
+					<a href="/fsd">Full Stack Development</a>
+					<a href="/datascience">Data Science</a>
+					<a href="/about">About</a>
+					<a href="/earn">Refer and Earn</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="menu-container">
+				<div class="hamburger-menu">
+					<button class="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							width="21"
+							viewBox="0 0 448 512"
+						>
+							<path
+								fill="#002147"
+								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="logo">
+					<img src="uploads/img/edupischoollogo.png" alt="" />
+					<h1>EduPi School</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/fsd">Full Stack Development</a></li>
+						<li><a href="/datascience">Data Science</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/earn">Refer and Earn</a></li>
+					</ul>
+				</nav>
+				<div class="header-buttons">
+					<% if (user) { %>
+					<!-- Display user's profile image when logged in -->
+					<a href="/profile"
+						><img
+							src="<%= user.profileImage || '/uploads/profile.png' %>"
+							class="profile-image"
+							alt="User Profile"
+					/></a>
+					<% } else { %>
+					<!-- Show login and signup buttons when not logged in -->
+					<a href="/login" class="login-button">Login</a>
+					<a href="/signup" class="signup-button">Sign Up</a>
+					<% } %>
+				</div>
+			</div>
+		</header>
+
+		<section class="about-us-section">
+			<div class="about-container">
+				<div class="about-content">
+					<h1 class="about-heading">Welcome to EduPiSchool</h1>
+					<p class="about-description">
+						EduPiSchool is on a mission to transform education in
+						Kashmir. We focus on providing high-quality learning
+						experiences, skill development, and career guidance to
+						empower students for success in the ever-evolving tech
+						industry.
+					</p>
+					<p class="about-description">
+						Our innovative curriculum, expert instructors, and
+						personalized mentorship set us apart. We believe in
+						practical, hands-on learning that equips students with
+						real-world skills, making them industry-ready from day
+						one.
+					</p>
+					<button class="explore-button">
+						Learn More
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="16"
+							width="14"
+							viewBox="0 0 448 512"
+						>
+							<path
+								fill="#ffffff"
+								d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+							/>
+						</svg>
+					</button>
+				</div>
+				<div class="about-image">
+					<img
+						src="/uploads/adfar.jpg"
+						alt="EduPiSchool Image"
+						class="about-us-image"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section class="features-section">
+			<h2 class="section-heading">Why Choose EduPiSchool?</h2>
+			<div class="features-container">
+				<div class="feature-card">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="16"
+						width="20"
+						viewBox="0 0 640 512"
+					>
+						<path
+							fill="#004488"
+							d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"
+						/>
+					</svg>
+					<h3 class="feature-title">Expert Instructors</h3>
+					<p class="feature-description">
+						Learn from industry experts with a passion for teaching
+						and practical experience in their respective fields.
+					</p>
+					<p class="feature-description">
+						Learn from industry experts with a passion for teaching
+						and practical experience in their respective fields.
+					</p>
+					<p class="feature-description">
+						Learn from industry experts with a passion for teaching
+						and practical experience in their respective fields.
+					</p>
+					<p class="feature-description">
+						Learn from industry experts with a passion for teaching
+						and practical experience in their respective fields.
+					</p>
+				</div>
+				<div class="feature-card">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="16"
+						width="20"
+						viewBox="0 0 640 512"
+					>
+						<path
+							fill="#004488"
+							d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+						/>
+					</svg>
+
+					<h3 class="feature-title">Hands-on Learning</h3>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+				</div>
+				<div class="feature-card">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="16"
+						width="16"
+						viewBox="0 0 512 512"
+					>
+						<path
+							fill="#004488"
+							d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"
+						/>
+					</svg>
+					<h3 class="feature-title">Recognized Certificates</h3>
+					<p class="feature-description">
+						Earn certificates that are recognized by top companies,
+						showcasing your skills and expertise.
+					</p>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+					<p class="feature-description">
+						Gain practical, hands-on experience through projects,
+						assignments, and real-world scenarios.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="problem-solution-section">
+			<h2 class="section-heading">Challenges in Kashmir</h2>
+			<div class="problem-solution-container">
+				<div class="problem-card">
+					<h3 class="card-title">The Challenge</h3>
+					<p class="card-description">
+						Kashmir faces a significant gap in technical skills,
+						leading to high unemployment rates. The demand for
+						skilled professionals far exceeds the available
+						workforce.
+					</p>
+					<p class="card-description">
+						According to recent data, a large portion of the youth
+						lacks access to quality education and relevant training
+						programs, hindering their employability in the modern
+						job market.
+					</p>
+					<p class="card-description">
+						Kashmir faces a significant gap in technical skills,
+						leading to high unemployment rates. The demand for
+						skilled professionals far exceeds the available
+						workforce.
+					</p>
+					<p class="card-description">
+						According to recent data, a large portion of the youth
+						lacks access to quality education and relevant training
+						programs, hindering their employability in the modern
+						job market.
+					</p>
+				</div>
+				<div class="solution-card">
+					<h3 class="card-title">Our Solution</h3>
+					<p class="card-description">
+						EduPiSchool is committed to bridging the skills gap in
+						Kashmir. We provide industry-relevant education and
+						hands-on training to equip students with the skills
+						demanded by the tech industry.
+					</p>
+					<p class="card-description">
+						By offering practical courses, mentorship programs, and
+						connecting students with industry professionals, we aim
+						to empower the youth of Kashmir, making them valuable
+						contributors to the workforce.
+					</p>
+					<p class="card-description">
+						EduPiSchool is committed to bridging the skills gap in
+						Kashmir. We provide industry-relevant education and
+						hands-on training to equip students with the skills
+						demanded by the tech industry.
+					</p>
+					<p class="card-description">
+						By offering practical courses, mentorship programs, and
+						connecting students with industry professionals, we aim
+						to empower the youth of Kashmir, making them valuable
+						contributors to the workforce.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="left">
+				<div class="logo">EduPi</div>
+				<div class="contact">
+					<h2>Contact</h2>
+					<address>5534 Somewhere In. The World 22193-10212</address>
+					<a href="mailto:example@gmail.com">Email Us</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="g g-1">
+					<div class="title">Media</div>
+					<div class="links">
+						<a href="#">Online</a>
+						<a href="#">Print</a>
+						<a href="#">Alternative Ads</a>
+					</div>
+				</div>
+				<div class="g g-2">
+					<div class="title">Technology</div>
+					<div class="links">
+						<a href="#">Hardware Design</a>
+						<a href="#">Software Design</a>
+						<a href="#">Digital Signature</a>
+						<a href="#">Automation</a>
+						<a href="#">Artificial-Intelligence</a>
+						<a href="#">IoT</a>
+					</div>
+				</div>
+				<div class="g g-3">
+					<div class="title">Legal</div>
+					<div class="links">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of Use</a>
+						<a href="#">Sitemap</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2019 Something. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/68129f478c.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- <script src="/js/script.js"></script> -->
+		<script src="./js/menu.js"></script>
+	</body>
+</html>
