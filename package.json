@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node -r dotenv/config app.js",
-    "build":"webpack --mode production"
+    "build":"npm i"
   },
   "keywords": [],
   "author": "",
