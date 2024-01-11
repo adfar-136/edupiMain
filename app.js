@@ -216,12 +216,12 @@ app.post("/getstarted", async (req, res) => {
 app.post("/fsd", async (req, res) => {
 	const { fullName, email, phoneNumber } = req.body;
 	const newUser = await Register.create({ fullName, email, phoneNumber });
-	res.status(201).redirect("/");
+	res.status(201).redirect("/success");
 });
 app.post("/datascience", async (req, res) => {
 	const { fullName, email, phoneNumber } = req.body;
 	const newUser = await Register.create({ fullName, email, phoneNumber });
-	res.status(201).redirect("/");
+	res.status(201).redirect("/success");
 });
 app.get("/logout", (req, res) => {
 	req.logout(() => {});
