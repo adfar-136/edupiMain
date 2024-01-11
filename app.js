@@ -210,7 +210,8 @@ app.post("/getstarted", async (req, res) => {
 	const { fullName, phoneNumber } = req.body;
 	const newUser = await Contact.create({ fullName, phoneNumber });
 	req.flash('success', 'Thank you for filling up the details! We will connect with you soon.');
-	res.status(201).redirect("/");
+	
+	res.status(201).redirect("/success");
 });
 app.post("/fsd", async (req, res) => {
 	const { fullName, email, phoneNumber } = req.body;
@@ -240,11 +241,17 @@ app.get("/datascience", (req, res) => {
 });
 app.get("/getstarted", (req, res) => {
 	const user = req.user; // Access the authenticated user from req.user
-	res.render("getstarted", { user });
+	const successMessage = req.flash('success');
+    const errorMessage = req.flash('error');
+	res.render("getstarted", { user,successMessage, errorMessage  });
 });
 app.get("/termsandcond", (req, res) => {
 	const user = req.user; // Access the authenticated user from req.user
 	res.render("termsandcond", { user });
+});
+app.get("/success", (req, res) => {
+	const user = req.user; // Access the authenticated user from req.user
+	res.render("success", { user });
 });
 app.listen(PORT, () => {
 	console.log("connected to 3000 port");
