@@ -1,598 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/css/navbar.css" />
-		<link rel="stylesheet" href="/css/datascience.css" />
-		<link rel="stylesheet" href="/css/footer.css" />
-		<link
-			rel="shortcut icon"
-			href="uploads/img/favicon.ico"
-			type="image/x-icon"
-		/>
-		<title>EduPi-School, Kashmir's first skill school</title>
-		<meta name="description" content="EduPi School is a pioneering educational platform that
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/datascience.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="shortcut icon"
+      href="uploads/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>EduPi-School, Kashmir's first skill school</title>
+    <meta
+      name="description"
+      content="EduPi School is a pioneering educational platform that
 		provides technical education to help students and
-		professionals upskill in various new generation technologies">
-	</head>
-	<body>
-		<div class="ham-background">
-			<div class="nav-links">
-				<button class="cross">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="24"
-						width="18"
-						viewBox="0 0 384 512"
-					>
-						<path
-							fill="#002147"
-							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-						/>
-					</svg>
-				</button>
-				<div class="list">
-					<a href="/">Home</a>
-					<a href="/fsd">Full Stack Development</a>
-					<a href="/datascience">Data Science</a>
-					<a href="/about">About</a>
-					<a href="/getstarted">Free Masterclass</a>
-				</div>
-			</div>
-		</div>
-		<header>
-			<div class="menu-container">
-				<div class="hamburger-menu">
-					<button class="hamburger">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="24"
-							width="21"
-							viewBox="0 0 448 512"
-						>
-							<path
-								fill="#002147"
-								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-							/>
-						</svg>
-					</button>
-				</div>
-				<div class="logo">
-					<img src="uploads/img/edupischoollogo.png" alt="" />
-					<h1>EduPi School</h1>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/fsd">Full Stack Development</a></li>
-						<li><a href="/datascience">Data Science</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/getstarted">Free Masterclass</a></li>
-					</ul>
-				</nav>
-				<div class="header-buttons">
-					<% if (user) { %>
-					<!-- Display user's profile image when logged in -->
-					<a href="/profile"
-						><img
-							src="<%= user.profileImage || '/uploads/profile.png' %>"
-							class="profile-image"
-							alt="User Profile"
-					/></a>
-					<% } else { %>
-					<!-- Show login and signup buttons when not logged in -->
-					<a href="/login" class="login-button">Login</a>
-					<a href="/signup" class="signup-button">Sign Up</a>
-					<% } %>
-				</div>
-			</div>
-		</header>
+		professionals upskill in various new generation technologies"
+    />
+  </head>
+  <body>
+    <div class="ham-background">
+      <div class="nav-links">
+        <button class="cross">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="18"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#002147"
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </button>
+        <div class="list">
+          <a href="/">Home</a>
+          <a href="/fsd">Full Stack Development</a>
+          <a href="/datascience">Data Science</a>
+          <a href="/about">About</a>
+          <a href="/getstarted">Free Masterclass</a>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="menu-container">
+        <div class="hamburger-menu">
+          <button class="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="21"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#002147"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="logo">
+			<a href="/"><img src="uploads/img/edupischoollogo.png" alt="" /></a>
+			<h1><a href="/" style="text-decoration: none;color:rgba(0, 33, 71, 1)">EdupiSchool</a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fsd">Full Stack Development</a></li>
+            <li><a href="/datascience">Data Science</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/getstarted">Free Masterclass</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+      </div>
+    </header>
 
-		<section class="dsml-landing section">
-			<div class="top-section">
-				<div class="left-description">
-					<p class="dsml-title">
-						Cultivate expertize, unlock opportunities, and secure
-						your future with our extensive Data Science program,
-						featuring guarenteed placement support for career
-						success.
-					</p>
-					<h1 class="dsml-heading">
-						Data Science: <br class="dsml-landing-break" />A
-						Comprehensive Course <br class="dsml-landing-break" />
-						With Placement Assurance
-					</h1>
-					<div class="dsml-rating">
-						<div class="dsml-circles">
-							<div class="dsml-circle"></div>
-							<div class="dsml-circle"></div>
-							<div class="dsml-circle"></div>
-							<div class="dsml-circle"></div>
-							<div class="dsml-circle"></div>
-						</div>
-						<div class="dsml-stars">
-							✅✅✅✅✅ <br />
-							Get Started Today
-						</div>
-					</div>
-					<button class="apply-now">Apply Now</button>
-				</div>
-				<div class="right-description">
-					<div class="right-card-description">
-						<h3>Book Your Free Masterclass Now</h3>
-						<p>
-							Establishing partnerships with tech companies for
-							job placements.
-						</p>
-					</div>
-					<form method="post" class="contact-form">
-						<input
-							type="text"
-							id="fullName"
-							name="fullName"
-							placeholder="Enter your Full Name"
-							class="form-input"
-						/>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							placeholder="Enter your Email"
-							class="form-input"
-						/>
-						<input
-							type="tel"
-							id="phone"
-							name="phoneNumber"
-							placeholder="Enter your mobile number"
-							class="form-input"
-						/>
-						<p>
-							By clicking Sign Up, you agree to our
-							<a target="_blank" href="/termsandcond">Terms & Conditions</a>
-						</p>
-						<button type="submit" class="get-in-touch-button">
-							Get in Touch
-						</button>
-					</form>
-				</div>
-			</div>
-			<div class="bottom-section">
-				<div class="dsml-feature">
-					<p class="feture-title">Program Duration</p>
-					<h3>12 Months</h3>
-				</div>
-				<div class="dsml-feature">
-					<p class="feture-title">Skill Levels</p>
-					<h3>Beginner to Advanced</h3>
-				</div>
-				<div class="dsml-feature">
-					<p class="feture-title">Hands-on Projects</p>
-					<h3>Real-world Applications</h3>
-				</div>
-				<div class="dsml-feature">
-					<p class="feture-title">Industry Mentorship</p>
-					<h3>Guidance from Experts</h3>
-				</div>
-			</div>
-		</section>
+    <section class="dsml-landing section">
+      <div class="top-section">
+        <div class="left-description">
+          <p class="dsml-title">
+            Cultivate expertize, unlock opportunities, and secure your future
+            with our extensive Data Science program, featuring guarenteed
+            placement support for career success.
+          </p>
+          <h1 class="dsml-heading">
+            Data Science: <br class="dsml-landing-break" />A Comprehensive
+            Course <br class="dsml-landing-break" />
+            With Placement Assurance
+          </h1>
+          <div class="dsml-rating">
+            <div class="dsml-circles">
+              <div class="dsml-circle"></div>
+              <div class="dsml-circle"></div>
+              <div class="dsml-circle"></div>
+              <div class="dsml-circle"></div>
+              <div class="dsml-circle"></div>
+            </div>
+            <div class="dsml-stars">
+              ✅✅✅✅✅ <br />
+              Get Started Today
+            </div>
+          </div>
+          <button class="apply-now">Apply Now</button>
+        </div>
+        <div class="right-description">
+          <div class="right-card-description">
+            <h3>Book Your Free Masterclass Now</h3>
+            <p>
+              Establishing partnerships with tech companies for job placements.
+            </p>
+          </div>
+          <form method="post" class="contact-form">
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your Full Name"
+              class="form-input"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+              class="form-input"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phoneNumber"
+              placeholder="Enter your mobile number"
+              class="form-input"
+            />
+            <p>
+              By clicking Sign Up, you agree to our
+              <a target="_blank" href="/termsandcond">Terms & Conditions</a>
+            </p>
+            <button type="submit" class="get-in-touch-button">
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="dsml-feature">
+          <p class="feture-title">Program Duration</p>
+          <h3>12 Months</h3>
+        </div>
+        <div class="dsml-feature">
+          <p class="feture-title">Skill Levels</p>
+          <h3>Beginner to Advanced</h3>
+        </div>
+        <div class="dsml-feature">
+          <p class="feture-title">Hands-on Projects</p>
+          <h3>Real-world Applications</h3>
+        </div>
+        <div class="dsml-feature">
+          <p class="feture-title">Industry Mentorship</p>
+          <h3>Guidance from Experts</h3>
+        </div>
+      </div>
+    </section>
 
-		<section class="unique-features-section">
-			<h1 class="title">What Makes Our Data Science Course Unique?</h1>
-			<div class="cards">
-				<div class="card card1">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"
-						/>
-					</svg>
-					<h3 class="card-title">Experienced Data Scientists</h3>
-					<p class="card-description">
-						Industry experts in data science,
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="15.25"
-							viewBox="0 0 488 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-							/>
-						</svg>
-						Google,
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="14"
-							viewBox="0 0 448 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M0 32h214.6v214.6H0V32zm233.4 0H448v214.6H233.4V32zM0 265.4h214.6V480H0V265.4zm233.4 0H448V480H233.4V265.4z"
-							/>
-						</svg>
-						Microsoft, and many more .....
-					</p>
-				</div>
+    <section class="unique-features-section">
+      <h1 class="title">What Makes Our Data Science Course Unique?</h1>
+      <div class="cards">
+        <div class="card card1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"
+            />
+          </svg>
+          <h3 class="card-title">Experienced Data Scientists</h3>
+          <p class="card-description">
+            Industry experts in data science,
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="15.25"
+              viewBox="0 0 488 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+              />
+            </svg>
+            Google,
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M0 32h214.6v214.6H0V32zm233.4 0H448v214.6H233.4V32zM0 265.4h214.6V480H0V265.4zm233.4 0H448V480H233.4V265.4z"
+              />
+            </svg>
+            Microsoft, and many more .....
+          </p>
+        </div>
 
-				<div class="card card2">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="14"
-						viewBox="0 0 448 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"
-						/>
-					</svg>
-					<h3 class="card-title">Hands-On Data Projects</h3>
-					<p class="card-description">
-						Project-based learning with real-world data challenges.
-					</p>
-				</div>
+        <div class="card card2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="14"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"
+            />
+          </svg>
+          <h3 class="card-title">Hands-On Data Projects</h3>
+          <p class="card-description">
+            Project-based learning with real-world data challenges.
+          </p>
+        </div>
 
-				<div class="card card3">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"
-						/>
-					</svg>
-					<h3 class="card-title">Data Science Certification</h3>
-					<p class="card-description">
-						Industry-recognized certification for a career boost in
-						data science.
-					</p>
-				</div>
+        <div class="card card3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"
+            />
+          </svg>
+          <h3 class="card-title">Data Science Certification</h3>
+          <p class="card-description">
+            Industry-recognized certification for a career boost in data
+            science.
+          </p>
+        </div>
 
-				<div class="card card4">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="20"
-						viewBox="0 0 640 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"
-						/>
-					</svg>
-					<h3 class="card-title">
-						Interactive Data Science Platform
-					</h3>
-					<p class="card-description">
-						Engaging online platform with rich resources for data
-						science.
-					</p>
-				</div>
+        <div class="card card4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="20"
+            viewBox="0 0 640 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"
+            />
+          </svg>
+          <h3 class="card-title">Interactive Data Science Platform</h3>
+          <p class="card-description">
+            Engaging online platform with rich resources for data science.
+          </p>
+        </div>
 
-				<div class="card card5">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="20"
-						viewBox="0 0 640 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"
-						/>
-					</svg>
-					<h3 class="card-title">Live Data Science Support</h3>
-					<p class="card-description">
-						Instantly solve data science doubts with live chat
-						support.
-					</p>
-				</div>
+        <div class="card card5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="20"
+            viewBox="0 0 640 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"
+            />
+          </svg>
+          <h3 class="card-title">Live Data Science Support</h3>
+          <p class="card-description">
+            Instantly solve data science doubts with live chat support.
+          </p>
+        </div>
 
-				<div class="card card6">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="20"
-						viewBox="0 0 640 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
-						/>
-					</svg>
-					<h3 class="card-title">Data Science Career Guidance</h3>
-					<p class="card-description">
-						Personalized guidance for a successful career in data
-						science.
-					</p>
-				</div>
-			</div>
-		</section>
+        <div class="card card6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="20"
+            viewBox="0 0 640 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+            />
+          </svg>
+          <h3 class="card-title">Data Science Career Guidance</h3>
+          <p class="card-description">
+            Personalized guidance for a successful career in data science.
+          </p>
+        </div>
+      </div>
+    </section>
 
-		<section class="course-outcomes">
-			<div class="outcomes">
-				<h2>Data Science Skills</h2>
-				<ul>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="16"
-							viewBox="0 0 512 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zm96 96c0-17.7 14.3-32 32-32l192 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32zm32 64H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
-							/>
-						</svg>
-						Statistical Analysis
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="14"
-							viewBox="0 0 448 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"
-							/>
-						</svg>
-						Database Management
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="18"
-							viewBox="0 0 576 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"
-							/>
-						</svg>
-						Data Visualization
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
-							/>
-						</svg>
-						Machine Learning Algorithms
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-							/>
-						</svg>
-						Programming in Python and R
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
-							/>
-						</svg>
-						Big Data Processing
-					</li>
+    <section class="course-outcomes">
+      <div class="outcomes">
+        <h2>Data Science Skills</h2>
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zm96 96c0-17.7 14.3-32 32-32l192 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32zm32 64H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+              />
+            </svg>
+            Statistical Analysis
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"
+              />
+            </svg>
+            Database Management
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="18"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"
+              />
+            </svg>
+            Data Visualization
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+              />
+            </svg>
+            Machine Learning Algorithms
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+              />
+            </svg>
+            Programming in Python and R
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+              />
+            </svg>
+            Big Data Processing
+          </li>
 
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="16"
-							viewBox="0 0 512 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"
-							/>
-						</svg>
-						Predictive Modeling
-					</li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"
+              />
+            </svg>
+            Predictive Modeling
+          </li>
 
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-							/>
-						</svg>
-						Version control with Git and GitHub
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="18"
-							viewBox="0 0 576 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"
-							/>
-						</svg>
-						Cloud Computing for Data Science
-					</li>
-				</ul>
-			</div>
-			<div class="outcomes">
-				<h2>Machine Learning Skills</h2>
-				<ul>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#fcfcfc"
-								d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"
-							/>
-						</svg>
-						Supervised and Unsupervised Learning
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="16"
-							viewBox="0 0 512 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"
-							/>
-						</svg>
-						Neural Network and Deep Learning
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-							/>
-						</svg>
-						Feature Engineering and Selection
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="20"
-							viewBox="0 0 640 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
-							/>
-						</svg>
-						Model Evaluation and Deployment
-					</li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+              />
+            </svg>
+            Version control with Git and GitHub
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="18"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"
+              />
+            </svg>
+            Cloud Computing for Data Science
+          </li>
+        </ul>
+      </div>
+      <div class="outcomes">
+        <h2>Machine Learning Skills</h2>
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#fcfcfc"
+                d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"
+              />
+            </svg>
+            Supervised and Unsupervised Learning
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"
+              />
+            </svg>
+            Neural Network and Deep Learning
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+              />
+            </svg>
+            Feature Engineering and Selection
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="20"
+              viewBox="0 0 640 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+              />
+            </svg>
+            Model Evaluation and Deployment
+          </li>
 
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="14"
-							viewBox="0 0 448 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"
-							/>
-						</svg>
-						Ethics in Machine Learning
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="18"
-							viewBox="0 0 576 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
-							/>
-						</svg>
-						Natural Language Processing
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="14"
-							viewBox="0 0 448 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"
-							/>
-						</svg>
-						Handling Imbalanced Data
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="14"
-							viewBox="0 0 448 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"
-							/>
-						</svg>
-						Collaborative Filtering
-					</li>
-					<li>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							height="16"
-							width="18"
-							viewBox="0 0 576 512"
-						>
-							<path
-								fill="#ffffff"
-								d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
-							/>
-						</svg>
-						Time Series Analysis
-					</li>
-				</ul>
-			</div>
-		</section>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"
+              />
+            </svg>
+            Ethics in Machine Learning
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="18"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+              />
+            </svg>
+            Natural Language Processing
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"
+              />
+            </svg>
+            Handling Imbalanced Data
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="14"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"
+              />
+            </svg>
+            Collaborative Filtering
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="18"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="#ffffff"
+                d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+              />
+            </svg>
+            Time Series Analysis
+          </li>
+        </ul>
+      </div>
+    </section>
 
-		<section class="fee-section">
+    <!-- <section class="fee-section">
 			<h1 class="fee-heading">FEE Structure</h1>
 			<div class="fee-cards">
-				<!-- Job Placement Card -->
+				
 				<div class="fee-card">
 					<div class="fee-title">
 						<svg
@@ -619,7 +615,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -634,7 +630,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -649,7 +645,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -665,7 +661,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -680,7 +676,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -695,7 +691,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -710,7 +706,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -723,7 +719,7 @@
 					<a href="#jobPlacement">Enroll</a>
 				</div>
 
-				<!-- Upskill - College Card -->
+				
 				<div class="fee-card">
 					<div class="fee-title">
 						<svg
@@ -732,7 +728,7 @@
 							width="20"
 							viewBox="0 0 640 512"
 						>
-							<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+							
 							<path
 								fill="#3499db"
 								d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
@@ -751,7 +747,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -766,7 +762,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -781,7 +777,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -796,7 +792,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -811,7 +807,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -826,7 +822,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+							
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -841,7 +837,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -854,7 +850,7 @@
 					<a href="#upskillCollege">Enroll</a>
 				</div>
 
-				<!-- Upskill - Professional Card -->
+				
 				<div class="fee-card">
 					<div class="fee-title">
 						<svg
@@ -863,7 +859,7 @@
 							width="14"
 							viewBox="0 0 448 512"
 						>
-							<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+							
 							<path
 								fill="#3498db"
 								d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"
@@ -882,7 +878,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+							
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -897,7 +893,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -912,7 +908,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -927,7 +923,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+							
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -942,7 +938,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -957,7 +953,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -972,7 +968,7 @@
 								width="14"
 								viewBox="0 0 448 512"
 							>
-								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								
 								<path
 									fill="#27ae60"
 									d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
@@ -986,670 +982,418 @@
 				</div>
 			</div>
 		</section>
+	-->
+    <section class="data-science-section">
+      <h1 class="title">Why Choose Data Science?</h1>
+      <div class="cards">
+        <div class="card card1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zm96 96c0-17.7 14.3-32 32-32l192 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32zm32 64H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+            />
+          </svg>
+          <h3 class="card-title">The Future of Data Science</h3>
+          <p class="card-description">
+            Embrace data science for modern insights and analytics.
+          </p>
+        </div>
 
-		<section class="data-science-section">
-			<h1 class="title">Why Choose Data Science?</h1>
-			<div class="cards">
-				<div class="card card1">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M32 32c17.7 0 32 14.3 32 32V400c0 8.8 7.2 16 16 16H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64C0 46.3 14.3 32 32 32zm96 96c0-17.7 14.3-32 32-32l192 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32zm32 64H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H160c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
-						/>
-					</svg>
-					<h3 class="card-title">The Future of Data Science</h3>
-					<p class="card-description">
-						Embrace data science for modern insights and analytics.
-					</p>
-				</div>
+        <div class="card card2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="14"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"
+            />
+          </svg>
+          <h3 class="card-title">Reshaping Data Analysis</h3>
+          <p class="card-description">
+            Transform data into meaningful insights with data science.
+          </p>
+        </div>
 
-				<div class="card card2">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="14"
-						viewBox="0 0 448 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"
-						/>
-					</svg>
-					<h3 class="card-title">Reshaping Data Analysis</h3>
-					<p class="card-description">
-						Transform data into meaningful insights with data
-						science.
-					</p>
-				</div>
+        <div class="card card3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
+            />
+          </svg>
+          <h3 class="card-title">Career Longevity in Data Science</h3>
+          <p class="card-description">
+            Master data science for innovation and relevance in your career.
+          </p>
+        </div>
 
-				<div class="card card3">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
-						/>
-					</svg>
-					<h3 class="card-title">Career Longevity in Data Science</h3>
-					<p class="card-description">
-						Master data science for innovation and relevance in your
-						career.
-					</p>
-				</div>
+        <div class="card card4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="18"
+            viewBox="0 0 576 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM176 256a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zm76-48c0 9.7 6.9 17.7 16 19.6V276h-4c-11 0-20 9-20 20s9 20 20 20h24 24c11 0 20-9 20-20s-9-20-20-20h-4V208c0-11-9-20-20-20H272c-11 0-20 9-20 20z"
+            />
+          </svg>
+          <h3 class="card-title">High Earning Potential</h3>
+          <p class="card-description">
+            Unlock financial opportunities with in-demand data science skills.
+          </p>
+        </div>
 
-				<div class="card card4">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="18"
-						viewBox="0 0 576 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM176 256a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zm76-48c0 9.7 6.9 17.7 16 19.6V276h-4c-11 0-20 9-20 20s9 20 20 20h24 24c11 0 20-9 20-20s-9-20-20-20h-4V208c0-11-9-20-20-20H272c-11 0-20 9-20 20z"
-						/>
-					</svg>
-					<h3 class="card-title">High Earning Potential</h3>
-					<p class="card-description">
-						Unlock financial opportunities with in-demand data
-						science skills.
-					</p>
-				</div>
+        <div class="card card5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"
+            />
+          </svg>
+          <h3 class="card-title">Steer Your Data Science Career</h3>
+          <p class="card-description">
+            Navigate the growing demand and innovation in the field of data
+            science.
+          </p>
+        </div>
 
-				<div class="card card5">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"
-						/>
-					</svg>
-					<h3 class="card-title">Steer Your Data Science Career</h3>
-					<p class="card-description">
-						Navigate the growing demand and innovation in the field
-						of data science.
-					</p>
-				</div>
+        <div class="card card6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+          <h3 class="card-title">Most Demanded Data Science Skills</h3>
+          <p class="card-description">
+            Pursue high-demand roles in data science and analytics.
+          </p>
+        </div>
+      </div>
+    </section>
 
-				<div class="card card6">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#ffffff"
-							d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-						/>
-					</svg>
-					<h3 class="card-title">
-						Most Demanded Data Science Skills
-					</h3>
-					<p class="card-description">
-						Pursue high-demand roles in data science and analytics.
-					</p>
-				</div>
-			</div>
-		</section>
+    <section class="content-section">
+      <h1 class="road-heading">FSD Journey</h1>
+      <div class="layout-container">
+        <div class="timeline-buttons">
+          <button
+            id="dsMathBtn"
+            class="selected"
+            onclick="showContent('dsMath')"
+          >
+            Mathematics for Data Science
+          </button>
+          <button id="dsProgBtn" onclick="showContent('dsProg')">
+            Programming with Python
+          </button>
+          <button id="dsStatsBtn" onclick="showContent('dsStats')">
+            Statistics and Probability
+          </button>
+          <button id="dsMLBtn" onclick="showContent('dsML')">
+            Machine Learning Basics
+          </button>
+          <button id="dsDLBtn" onclick="showContent('dsDL')">
+            Deep Learning Fundamentals
+          </button>
+          <button id="dsVizBtn" onclick="showContent('dsViz')">
+            Data Visualization Techniques
+          </button>
+          <button id="dsSQLBtn" onclick="showContent('dsSQL')">
+            SQL for Data Science
+          </button>
+          <button id="dsProjBtn" onclick="showContent('dsProj')">
+            Real-world Projects
+          </button>
+        </div>
+        <div class="timeline-pages" id="contentContainer"></div>
+      </div>
+    </section>
 
-		<section class="content-section">
-			<h1 class="road-heading">FSD Journey</h1>
-			<div class="layout-container">
-				<div class="timeline-buttons">
-					<button
-						id="dsMathBtn"
-						class="selected"
-						onclick="showContent('dsMath')"
-					>
-						Mathematics for Data Science
-					</button>
-					<button id="dsProgBtn" onclick="showContent('dsProg')">
-						Programming with Python
-					</button>
-					<button id="dsStatsBtn" onclick="showContent('dsStats')">
-						Statistics and Probability
-					</button>
-					<button id="dsMLBtn" onclick="showContent('dsML')">
-						Machine Learning Basics
-					</button>
-					<button id="dsDLBtn" onclick="showContent('dsDL')">
-						Deep Learning Fundamentals
-					</button>
-					<button id="dsVizBtn" onclick="showContent('dsViz')">
-						Data Visualization Techniques
-					</button>
-					<button id="dsSQLBtn" onclick="showContent('dsSQL')">
-						SQL for Data Science
-					</button>
-					<button id="dsProjBtn" onclick="showContent('dsProj')">
-						Real-world Projects
-					</button>
-				</div>
-				<div class="timeline-pages" id="contentContainer"></div>
-			</div>
-		</section>
+    <section class="services-section">
+      <div class="section-header">
+        <h1 class="title">Course Services</h1>
+        <p class="section-description">
+          Upskilling and preparing you to be a solid engineer. We help with job
+          search and interview preparation too!
+        </p>
+      </div>
 
-		<section class="services-section">
-			<div class="section-header">
-				<h1 class="title">Course Services</h1>
-				<p class="section-description">
-					Upskilling and preparing you to be a solid engineer. We help
-					with job search and interview preparation too!
-				</p>
-			</div>
+      <div class="service-cards">
+        <div class="service-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="16"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#004080"
+              d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
+            />
+          </svg>
+          <h3 class="service-title">Job Opportunities</h3>
+          <p class="service-description">
+            Access job opportunities from our 100+ employer partners.
+          </p>
+        </div>
 
-			<div class="service-cards">
-				<div class="service-card">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="16"
-						viewBox="0 0 512 512"
-					>
-						<path
-							fill="#004080"
-							d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"
-						/>
-					</svg>
-					<h3 class="service-title">Job Opportunities</h3>
-					<p class="service-description">
-						Access job opportunities from our 100+ employer
-						partners.
-					</p>
-				</div>
+        <div class="service-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="20"
+            viewBox="0 0 640 512"
+          >
+            <path
+              fill="#004080"
+              d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"
+            />
+          </svg>
+          <h3 class="service-title">Community Networking</h3>
+          <p class="service-description">
+            Exchange job opportunities with our extensive 20K+ Tech student
+            community.
+          </p>
+        </div>
 
-				<div class="service-card">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="20"
-						viewBox="0 0 640 512"
-					>
-						<path
-							fill="#004080"
-							d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"
-						/>
-					</svg>
-					<h3 class="service-title">Community Networking</h3>
-					<p class="service-description">
-						Exchange job opportunities with our extensive 20K+ Tech
-						student community.
-					</p>
-				</div>
+        <div class="service-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="20"
+            viewBox="0 0 640 512"
+          >
+            <path
+              fill="#004080"
+              d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"
+            />
+          </svg>
+          <h3 class="service-title">Mock Interviews</h3>
+          <p class="service-description">
+            Practice mock interviews with people working in the industry.
+          </p>
+        </div>
 
-				<div class="service-card">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="20"
-						viewBox="0 0 640 512"
-					>
-						<path
-							fill="#004080"
-							d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"
-						/>
-					</svg>
-					<h3 class="service-title">Mock Interviews</h3>
-					<p class="service-description">
-						Practice mock interviews with people working in the
-						industry.
-					</p>
-				</div>
+        <div class="service-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="12"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#004080"
+              d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+            />
+          </svg>
+          <h3 class="service-title">Resume & LinkedIn Optimization</h3>
+          <p class="service-description">
+            Optimize your resume & LinkedIn profile with our experienced
+            experts.
+          </p>
+        </div>
+      </div>
+    </section>
 
-				<div class="service-card">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						height="16"
-						width="12"
-						viewBox="0 0 384 512"
-					>
-						<path
-							fill="#004080"
-							d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
-						/>
-					</svg>
-					<h3 class="service-title">
-						Resume & LinkedIn Optimization
-					</h3>
-					<p class="service-description">
-						Optimize your resume & LinkedIn profile with our
-						experienced experts.
-					</p>
-				</div>
-			</div>
-		</section>
+    <section class="faq-section">
+      <h1 class="faq-heading">Frequently Asked Questions</h1>
 
-		<section class="faq-section">
-			<h1 class="faq-heading">Frequently Asked Questions</h1>
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <h2>
+          What is the learning approach for non-tech individuals in your MERN
+          full stack and data science courses?
+        </h2>
+        <p>
+          Our courses are specifically designed to cater to individuals with
+          non-tech backgrounds. We provide step-by-step guidance, practical
+          examples, and personalized support to ensure a smooth learning
+          experience.
+        </p>
+      </div>
 
-			<!-- FAQ 1 -->
-			<div class="faq-item">
-				<h2>When are the live classes held?</h2>
-				<p>
-					Live classes are normally held 2 times a week, with the
-					exact class days and timings being determined by the batch.
-					However, given all learners would be software engineers that
-					are currently working, the classes would be held in the late
-					evening or night on weekdays and any suitable time over the
-					weekends.
-				</p>
-			</div>
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <h2>
+          How many classes per week are scheduled for the MERN full stack and
+          data science programs?
+        </h2>
+        <p>
+          There are four classes per week for each course. The schedule is
+          designed to accommodate both working professionals and non-tech
+          learners.
+        </p>
+      </div>
 
-			<!-- FAQ 2 -->
-			<div class="faq-item">
-				<h2>
-					What happens if I miss a lecture in this online full-stack
-					developer course?
-				</h2>
-				<p>
-					All lectures are recorded, and you will have access to the
-					recordings after the lecture is completed.
-				</p>
-			</div>
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <h2>
+          What kind of support is available for non-tech learners during the
+          courses?
+        </h2>
+        <p>
+          We offer dedicated support through instructors, teaching assistants,
+          and personal mentors. Our goal is to ensure that non-tech learners
+          feel comfortable and confident throughout the learning journey.
+        </p>
+      </div>
 
-			<!-- FAQ 3 -->
-			<div class="faq-item">
-				<h2>
-					Can I attend this full-stack developer training part-time?
-				</h2>
-				<p>
-					The program has a fixed schedule, during which you would
-					attend live-lectures with a dedicated instructor, Teaching
-					Assistant, and personal mentor. A 15-hour weekly commitment
-					is required for the duration of the program to achieve
-					positive results.
-				</p>
-			</div>
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <h2>
+          Are there prerequisites for individuals with no technical background
+          to enroll in these courses?
+        </h2>
+        <p>
+          No specific technical background is required. Our courses are crafted
+          to accommodate learners from diverse backgrounds. Basic computer
+          literacy is recommended, and our curriculum covers fundamental
+          concepts.
+        </p>
+      </div>
 
-			<!-- FAQ 4 -->
-			<div class="faq-item">
-				<h2>Are full-stack developers in demand in 2023?</h2>
-				<p>
-					A full-stack developer is one of the high-demand jobs in the
-					industry. Companies pay them handsomely since they
-					contribute the most to software projects. Whether you are a
-					fresher or an experienced developer, you will always be in
-					demand in the software industry, with great opportunities
-					waiting for you.
-				</p>
-			</div>
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <h2>
+          Can non-tech individuals switch to a tech career after completing the
+          courses?
+        </h2>
+        <p>
+          Absolutely! Our programs are designed to empower individuals to
+          transition into tech careers. The skills acquired during the courses
+          provide a strong foundation for a successful career change.
+        </p>
+      </div>
 
-			<!-- FAQ 5 -->
-			<div class="faq-item">
-				<h2>Will I get a full-stack developer certification?</h2>
-				<p>
-					After the end of the full-stack developer course, you will
-					receive a course completion certificate.
-				</p>
-			</div>
+      <!-- FAQ 6 -->
+      <div class="faq-item">
+        <h2>
+          How are practical skills emphasized in the MERN full stack and data
+          science courses?
+        </h2>
+        <p>
+          Our curriculum includes hands-on projects and real-world applications.
+          Non-tech learners will have the opportunity to apply theoretical
+          knowledge in practical scenarios, ensuring a well-rounded skill
+          development.
+        </p>
+      </div>
 
-			<!-- FAQ 6 -->
-			<div class="faq-item">
-				<h2>
-					Can I enroll only in the full-stack module of the
-					EduPiSchool Academy Program?
-				</h2>
-				<p>
-					No, we feel that before jumping into a full-stack module,
-					you must learn the basics of programming, CS fundamentals,
-					and Data Structures & Algorithms. These skills are essential
-					to have before you can begin with a full-stack
-					specialization.
-				</p>
-			</div>
+      <!-- FAQ 7 -->
+      <div class="faq-item">
+        <h2>
+          Is it possible to balance the course workload with a full-time job for
+          non-tech professionals?
+        </h2>
+        <p>
+          Yes, the schedule is designed with flexibility in mind. With four
+          classes per week, learners, including those with full-time jobs, can
+          effectively manage their time and commitments.
+        </p>
+      </div>
 
-			<!-- FAQ 7 -->
-			<div class="faq-item">
-				<h2>
-					What are the roles and responsibilities of a Full Stack
-					Developer?
-				</h2>
-				<ul>
-					<li>Designing user interactions on websites</li>
-					<li>
-						Developing servers and databases for website
-						functionality
-					</li>
-					<li>Coding for mobile platforms</li>
-					<li>Designing & developing APIs</li>
-				</ul>
-			</div>
+      <!-- FAQ 8 -->
+      <div class="faq-item">
+        <h2>
+          Are there any additional resources or support for non-tech individuals
+          who need extra assistance?
+        </h2>
+        <p>
+          Yes, we offer additional resources and personalized assistance for
+          individuals who may need extra support. Our aim is to ensure that
+          every learner, regardless of their background, can succeed in the
+          program.
+        </p>
+      </div>
 
-			<!-- FAQ 8 -->
-			<div class="faq-item">
-				<h2>What is the average salary for a Full Stack developer?</h2>
-				<p>
-					According to Glassdoor, the average salary for Full Stack
-					Developers is INR 5,50000 per year in India. Full Stack
-					Developers earn an average salary of USD 98,524 in the
-					United States. For more detailed information, you can visit
-					this blog.
-				</p>
-			</div>
+      <!-- FAQ 9 -->
+      <div class="faq-item">
+        <h2>
+          How can non-tech learners benefit from networking opportunities in the
+          program?
+        </h2>
+        <p>
+          Networking events and workshops provide non-tech learners with the
+          chance to connect with industry professionals. These opportunities can
+          be valuable for gaining insights and building a supportive
+          professional network.
+        </p>
+      </div>
+    </section>
 
-			<!-- FAQ 9 -->
-			<div class="faq-item">
-				<h2>
-					How are Full stack developers different from software
-					engineers?
-				</h2>
-				<p>
-					While Full Stack Developers focus on web applications,
-					Software Engineers specialize in native apps. And while the
-					term Software Engineer is broad and could mean a variety of
-					things, a Full Stack Developer's skill set is laser-focused
-					on web development.
-				</p>
-			</div>
+    <footer>
+      <div class="left">
+        <div class="logo">EduPi</div>
+        <div class="contact">
+          <h2>Contact</h2>
+          <address>srinagar Kashmir J & K, 7006525041</address>
+          <a href="mailto:edupischool@gmail.com">Email Us</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="g g-1">
+          <div class="title">Media</div>
+          <div class="links">
+			<a href="https://www.facebook.com/edupilearning"><img src="uploads/img/Facebook.png" /> </a>
+			<a href="https://www.youtube.com/channel/UCIeePtZWQbV4X4ysTpnPWIA"><img src="uploads/img/Youtube.png" /></a>
+			<a href="https://www.facebook.com/edupilearning"><img src="uploads/img/Instagram.png" /></a>
+			<a href="https://www.linkedin.com/company/edupi-school/"><img src="uploads/img/Linkedin.png" /></a>
+          </div>
+        </div>
+        <div class="g g-2">
+          <div class="title">Technology</div>
+          <div class="links">
+            <a href="/fsd">Full Stack Web Developement</a>
+            <a href="/datascience">Data Science Program</a>
+            <a href="/getstarted">Masterclass</a>
+          </div>
+        </div>
+        <div class="g g-3">
+          <div class="title">Legal</div>
+          <div class="links">
+            <a href="/getstarted">Contact us</a>
+            <a href="/about">About us</a>
+            <!-- <a href="#">Hire from us</a> -->
+            <a href="/termsandcond">Privacy policy</a>
+            <!-- <a href="#">Terms of use</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023. EduPi School. All rights reserved.</p>
+      </div>
+    </footer>
 
-			<!-- FAQ 10 -->
-			<div class="faq-item">
-				<h2>Is full-stack web development difficult to learn?</h2>
-				<p>
-					Full-stack developers possess a wide range of abilities and
-					are expected to have comprehensive programming knowledge.
-					But it's definitely possible to learn these skills with
-					dedication and practice.
-				</p>
-			</div>
-
-			<!-- FAQ 11 -->
-			<div class="faq-item">
-				<h2>
-					What level of coding proficiency is necessary to be
-					successful as a full stack web developer?
-				</h2>
-				<p>
-					Full Stack Developers must be extremely versatile, with
-					in-depth knowledge of HTML, CSS, and JavaScript. Also,
-					should be familiar with server-side languages such as
-					Python, Ruby, or Node.js.
-				</p>
-			</div>
-
-			<!-- FAQ 12 -->
-			<div class="faq-item">
-				<h2>Do all sections start at the same time?</h2>
-				<p>
-					Yes, all sections start at the same time but end at
-					different times, depending on the duration of the course for
-					that section. The Advanced section ends in 9 months, the
-					Intermediate section ends in 11 months, and the Beginner
-					section ends in 13 months.
-				</p>
-			</div>
-
-			<!-- FAQ 13 -->
-			<div class="faq-item">
-				<h2>
-					Should I join the Beginner, Intermediate, or Advanced
-					section of this Full-stack developer program?
-				</h2>
-				<p>
-					Your eligibility for the Beginner, Intermediate, or Advanced
-					section is decided based on an entrance test.
-				</p>
-			</div>
-
-			<!-- FAQ 14 -->
-			<div class="faq-item">
-				<h2>
-					What is the duration of this full-stack developer course?
-				</h2>
-				<p>
-					Depending on which section you are allotted, the duration of
-					the course could range from 9 to 13 months.
-				</p>
-			</div>
-
-			<!-- FAQ 15 -->
-			<div class="faq-item">
-				<h2>What is the format of the initial 30 min test?</h2>
-				<p>
-					The test will comprise Multiple Choice Questions (MCQs) on
-					topics like Logical reasoning and aptitude, Basic
-					mathematics, Basic time complexity analysis, and questions
-					on figuring out the outputs of small code snippets (in any
-					of C++/Java/Python).
-				</p>
-			</div>
-
-			<!-- FAQ 16 -->
-			<div class="faq-item">
-				<h2>Can this test be taken on mobile?</h2>
-				<p>
-					Yes! We have designed the test so that it can be easily
-					taken on mobile as well. However, for the best results, we
-					would advise you to take the test in a quiet setting with
-					minimal disruptions.
-				</p>
-			</div>
-
-			<!-- FAQ 17 -->
-			<div class="faq-item">
-				<h2>Do I need to prepare for this initial 30 min test?</h2>
-				<p>
-					No, you do not need any special preparation for this test.
-					However, if you would like, you could brush up on simple
-					concepts like arrangement, derangement, and a few simple
-					aptitude questions.
-				</p>
-			</div>
-
-			<!-- FAQ 18 -->
-			<div class="faq-item">
-				<h2>What is the role of the tutor in this course?</h2>
-				<p>
-					Our tutors would teach you the concepts mentioned in the
-					course curriculum and would take live classes 3 times a
-					week. There would be different tutors teaching different
-					topics.
-				</p>
-			</div>
-
-			<!-- FAQ 19 -->
-			<div class="faq-item">
-				<h2>What are the profiles of the tutors?</h2>
-				<p>
-					Our tutors have built scalable systems in the past and
-					understand the real-life importance of DSA and System
-					Design, not just interview-relevant material. They have
-					hands-on, real-life experience and don't just have
-					theoretical knowledge. For more detail on our tutors, please
-					visit
-				</p>
-			</div>
-
-			<!-- FAQ 20 -->
-			<div class="faq-item">
-				<h2>How will my doubts get solved?</h2>
-				<p>
-					We have 100+ Teaching Assistants that would solve your
-					doubts promptly. These doubts could be related to the class
-					content or regarding the assignments.
-				</p>
-			</div>
-
-			<!-- FAQ 21 -->
-			<div class="faq-item">
-				<h2>What is the role of the Teaching Assistant?</h2>
-				<p>
-					Teaching Assistants (TAs) work closely with the tutors to
-					help students with their assignments and homework. They
-					answer students' doubts via chat and video call. You would
-					interact with TAs regularly outside of the live-class
-					sessions to get more hands-on problem-solving experience.
-				</p>
-			</div>
-
-			<!-- FAQ 22 -->
-			<div class="faq-item">
-				<h2>What are the profiles of the Teaching Assistant?</h2>
-				<p>
-					Teaching Assistants (TAs) mostly come from strong
-					problem-solving backgrounds. They can be from a range of
-					experiences but share a common interest in coding and
-					teaching alike.
-				</p>
-			</div>
-
-			<!-- FAQ 23 -->
-			<div class="faq-item">
-				<h2>How many Teaching Assistants are allotted per batch?</h2>
-				<p>
-					2 Teaching Assistants (TAs) are allotted per batch of 40-50
-					students. This ensures each student gets enough time with
-					their TA and gets their queries resolved instantly.
-				</p>
-			</div>
-
-			<!-- FAQ 24 -->
-			<div class="faq-item">
-				<h2>What is the process of resolving doubts?</h2>
-				<p>
-					When a student has a doubt, he/she would raise a 'Help
-					Request.' This 'Help Request' would be circulated within the
-					peer group first to foster a sense of giving back and create
-					a sense of community. In parallel, the Teaching Assistant is
-					also alerted with regards to this 'Help Request.' The doubt
-					can then be either clarified via the peer group or via the
-					Teaching Assistants via text or via video call. If a video
-					call is done, the Teaching Assistant can also share his/her
-					screen to resolve the issue and help you understand the
-					concept better. These video calls are done 1:1.
-				</p>
-			</div>
-
-			<!-- FAQ 25 -->
-			<div class="faq-item">
-				<h2>
-					What are the prerequisites for enrolling in this full-stack
-					web developer course?
-				</h2>
-				<p>
-					No, you do not need any prerequisites to enroll in this
-					full-stack web developer program. It caters to both
-					beginners and experienced professionals seeking to enhance
-					their web development skills. However, there will be a 30
-					min initial MCQ test where your basics will be checked.
-				</p>
-			</div>
-
-			<!-- FAQ 26 -->
-			<div class="faq-item">
-				<h2>What is the role of the mentor?</h2>
-				<p>
-					Mentors provide personalized advice on your career. They
-					also help you with mock interviews, help with your resume,
-					and provide career advice. Mentors do 1:1 video calls with
-					you for 30-60 mins each for each session. It is advisable to
-					do 2 mentor sessions every month.
-				</p>
-			</div>
-
-			<!-- FAQ 27 -->
-			<div class="faq-item">
-				<h2>What are the profiles of the mentors?</h2>
-				<p>
-					Our mentors mostly work at tier 1 product companies and
-					would be experienced software professionals. For more
-					information, please visit
-				</p>
-			</div>
-
-			<!-- FAQ 28 -->
-			<div class="faq-item">
-				<h2>How many mentors are allotted per batch?</h2>
-				<p>
-					Based on your background, we offer a few mentors for you to
-					choose from at the beginning of the course. You could choose
-					1 mentor of your choice from this pool. We try to ensure
-					that your mentor is relatable to your background.
-				</p>
-			</div>
-
-			<!-- FAQ 29 -->
-			<div class="faq-item">
-				<h2>Can I change my mentor?</h2>
-				<p>
-					We would entertain a request to change a mentor, but a
-					change in mentor is done only on a case-by-case basis.
-				</p>
-			</div>
-
-			<!-- FAQ 30 -->
-			<div class="faq-item">
-				<h2>What kind of placement support will I be given?</h2>
-				<p>
-					We provide three kinds of placement support once you
-					complete this full-stack course
-				</p>
-			</div>
-		</section>
-
-		<footer>
-			<div class="left">
-			  <div class="logo">EduPi</div>
-			  <div class="contact">
-				<h2>Contact</h2>
-				<address>srinagar Kashmir J & K, 7006525041</address>
-				<a href="mailto:edupischool@gmail.com">Email Us</a>
-			  </div>
-			</div>
-			<div class="right">
-			  <div class="g g-1">
-				<div class="title">Media</div>
-				<div class="links">
-				  <a href="#"><img src="uploads/img/Facebook.png" /> </a>
-				  <a href="#"><img src="uploads/img/Youtube.png" /></a>
-				  <a href="#"><img src="uploads/img/Instagram.png" /></a>
-				  <a href="#"><img src="uploads/img/Linkedin.png" /></a>
-				  
-				</div>
-			  </div>
-			  <div class="g g-2">
-				<div class="title">Technology</div>
-				<div class="links">
-				  <a href="/fsd">Full Stack Web Developement</a>
-				  <a href="/datascience">Data Science Program</a>
-				  <a href="/getstarted">Masterclass</a>
-				</div>
-			  </div>
-			  <div class="g g-3">
-				<div class="title">Legal</div>
-				<div class="links">
-				  <a href="/getstarted">Contact us</a>
-				  <a href="/about">About us</a>
-				  <!-- <a href="#">Hire from us</a> -->
-				  <a href="/termsandcond">Privacy policy</a>
-				  <!-- <a href="#">Terms of use</a> -->
-				</div>
-			  </div>
-			</div>
-			<div class="copyright">
-			  <p>&copy; 2023. EduPi School. All rights reserved.</p>
-			</div>
-		  </footer>
-	  
-		<script
-			src="https://kit.fontawesome.com/68129f478c.js"
-			crossorigin="anonymous"
-		></script>
-		<script src="/js/datascience.js"></script>
-		<script src="./js/menu.js"></script>
-	</body>
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/datascience.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
