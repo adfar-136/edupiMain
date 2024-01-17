@@ -1,4 +1,8 @@
 /* Container for centering content */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html{
+	font-family: 'Montserrat', sans-serif;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;

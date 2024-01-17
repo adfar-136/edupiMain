@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html{
+	font-family: 'Montserrat', sans-serif;
+}
 :root {
 	--h3-font-family: "Poppins-Regular", Helvetica;
 	--h3-font-weight: 400;
