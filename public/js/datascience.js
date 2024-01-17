@@ -1,122 +1,122 @@
 const curriculum = {
   dsMath: `
-    <h2>Mathematics for Data Science</h2>
-    <p>Master essential math concepts:</p>
+    <h2>Foundations in Python and Linux</h2>
+    <p>Master essential Python and Linux concepts</p>
     <ul>
-      <li>Linear Algebra Basics</li>
-      <li>Calculus Fundamentals</li>
-      <li>Probability Theory Essentials</li>
-      <li>Key Statistical Concepts</li>
-      <li>Optimization Principles</li>
-      <li>Advanced Calculus Techniques</li>
-      <li>Multivariate Analysis</li>
-      <li>Statistical Modeling</li>
-      <li>Numerical Methods</li>
+      <li>Introduction to Python and Various IDEs</li>
+      <li>Variables, data types, loops, conditional statements</li>
+      <li>Functions, decorators, lambda functions</li>
+      <li>Inbuilt Data Structures in Python</li>
+      <li>File Handling, Exception handling, Errors, Regular Expressions</li>
+      <li>Web Scraping and object-oriented programming (OOP)</li>
+      <li>Introduction to the Linux Operating System</li>
+      <li>File handling, data extraction</li>
+      <li>Command-line operations in Linux</li>
     </ul>
   `,
   dsProg: `
-    <h2>Programming with Python</h2>
-    <p>Learn Python for data science:</p>
+    <h2>Data Structures and Algorithms</h2>
+    <p>Learn deep understanding of logic creation</p>
     <ul>
-      <li>Python Basics and Syntax</li>
-      <li>Data Types and Structures Usage</li>
-      <li>Control Flow and Functions Mastery</li>
-      <li>Data Science Libraries (NumPy, Pandas)</li>
-      <li>File Handling and Data Manipulation</li>
-      <li>Object-Oriented Programming (OOP)</li>
-      <li>Web Scraping with Python</li>
-      <li>Testing and Debugging</li>
-      <li>Version Control with Git</li>
+      <li>Introduction to Data Structures</li>
+      <li>Arrays and Lists Exploratione</li>
+      <li>Stacks and Queues Usage</li>
+      <li>Basic Sorting Algorithms</li>
+      <li>Searching Techniques</li>
+      <li>Introduction to Trees</li>
+      <li>Graph Fundamentals</li>
+      <li>Basic Dynamic Programming</li>
+      <li>Hashing and Hash Tables</li>
     </ul>
   `,
   dsStats: `
     <h2>Statistics and Probability</h2>
-    <p>Master statistical concepts for data analysis:</p>
+    <p>Master statistical concepts for data analysis</p>
     <ul>
-      <li>Descriptive Statistics Exploration</li>
-      <li>Inferential Statistics Understanding</li>
-      <li>Hypothesis Testing Techniques</li>
-      <li>Probability Distributions Overview</li>
-      <li>Regression Analysis Principles</li>
-      <li>Experimental Design</li>
-      <li>Statistical Inference</li>
-      <li>Bayesian Statistics</li>
-      <li>Time Series Analysis</li>
+      <li>Statistics Fundamentals</li>
+      <li>Importance of Statistics in Data Science</li>
+      <li>Types of Statistics</li>
+      <li>Common Statistical Terms</li>
+      <li>Probability Distribution</li>
+      <li>Hypothesis Testing, Bayes’ Theorem</li>
+      <li>Experimental Design, Concept of Confidence</li>
+      <li>Descriptive Measures in Statistics</li>
+      <li>Statistics and Probability Applications</li>
     </ul>
   `,
   dsML: `
-    <h2>Machine Learning Basics</h2>
-    <p>Introduction to machine learning:</p>
+    <h2>Data Wrangling With SQL</h2>
+    <p>Learn Data Wranling witj SQL</p>
     <ul>
-      <li>Supervised Learning Fundamentals</li>
-      <li>Unsupervised Learning Exploration</li>
-      <li>Feature Engineering Techniques</li>
-      <li>Model Evaluation Strategies</li>
-      <li>Ensemble Learning Concepts</li>
-      <li>Neural Networks and Deep Learning</li>
-      <li>Dimensionality Reduction</li>
-      <li>Natural Language Processing (NLP)</li>
-      <li>Reinforcement Learning Basics</li>
+      <li>Working with tables, Joins, and Variables</li>
+      <li>Functions, Subqueries, Rules, Views</li>
+      <li>Nested queries, Optimization techniques, String functions</li>
+      <li>Pattern matching, Date-time functions</li>
+      <li>Complex queries using CTE and Pivoting</li>
+      <li>Mathematical functions</li>
+      <li>Database Management and Schema Design</li>
+      <li>SQL and Python for Data Exploration</li>
+      <li>SQL and Python for Database Management</li>
     </ul>
   `,
   dsDL: `
-    <h2>Deep Learning Fundamentals</h2>
-    <p>Delve into deep learning techniques:</p>
+    <h2>Python for Data Analysis and Visualization</h2>
+    <p>Delve into deep learning techniques</p>
     <ul>
-      <li>Neural Networks Overview</li>
-      <li>Convolutional Neural Networks (CNN)</li>
-      <li>Recurrent Neural Networks (RNN)</li>
-      <li>Transfer Learning Insights</li>
-      <li>Generative Adversarial Networks (GAN)</li>
-      <li>Autoencoders and Variational Autoencoders</li>
-      <li>Hyperparameter Tuning</li>
-      <li>TensorFlow and Keras</li>
-      <li>Deployment Considerations</li>
+      <li>Introduction to Numpy</li>
+      <li>Numpy Arrays, Functions and Data Manipulation</li>
+      <li>Introduction to Pandas</li>
+      <li>DataFrames and Data Manipulation</li>
+      <li>Introduction to Matplotlib</li>
+      <li>Plotting time-series</li>
+      <li>Quantitative comparisons and statistical visualizations</li>
+      <li>Introduction to Seaborn</li>
+      <li>Seaborn Plot Types and Styling Visualizations</li>
     </ul>
   `,
   dsViz: `
-    <h2>Data Visualization Techniques</h2>
-    <p>Communicate insights through effective visualization:</p>
+    <h2>Machine Learning</h2>
+    <p>Introduction to machine learning</p>
     <ul>
-      <li>Introduction to Data Visualization</li>
-      <li>Matplotlib and Seaborn Tools Usage</li>
-      <li>Interactive Visualization with Plotly</li>
-      <li>Dashboards and Storytelling Skills</li>
-      <li>Geospatial Data Visualization</li>
-      <li>Network Data Visualization</li>
-      <li>Big Data Visualization</li>
-      <li>Visualization Best Practices</li>
-      <li>Data Ethics and Visualization</li>
+      <li>Fundamentals of Machine Learning</li>
+      <li>Mathematics behind Machine Learning</li>
+      <li>Types, importance, libraries, and working principles</li>
+      <li>Scikit-learn and Keras Applications</li>
+      <li>Supervised and Unsupervised Learning</li>
+      <li>Regression and Classification and their Applications</li>
+      <li>Ensemble Learning</li>
+      <li>Natural Language Processing</li>
+      <li>Deep Learning</li>
     </ul>
   `,
   dsSQL: `
-    <h2>SQL for Data Science</h2>
-    <p>Master SQL for data manipulation and analysis:</p>
+    <h2>Power BI for Data Modeling and Visualization</h2>
+    <p>Data Modeling and Visualization</p>
     <ul>
-      <li>Database Basics Understanding</li>
-      <li>SQL Queries Mastery</li>
-      <li>Joins and Subqueries Techniques</li>
-      <li>Database Design Principles</li>
-      <li>Data Extraction and Transformation</li>
-      <li>Advanced SQL Concepts</li>
-      <li>Indexing and Query Optimization</li>
-      <li>NoSQL Databases Overview</li>
-      <li>Data Warehousing and OLAP</li>
+      <li>Power BI Data Model Concepts</li>
+      <li>Relationship Building and Viewing</li>
+      <li>Techniques for Data Manipulation</li>
+      <li>Building Dynamic Visualizations</li>
+      <li>Transforming Data</li>
+      <li>Drilling down and Filtering</li>
+      <li>Power Query Editor</li>
+      <li>Numerical transformations in Power Query</li>
+      <li>Introduction to DAX in Power BI</li>
     </ul>
   `,
   dsProj: `
-    <h2>Real-world Projects</h2>
-    <p>Apply skills to real-world data science projects:</p>
+    <h2>Job Readiness and Career Guidance</h2>
+    <p>Apply skills to real-world data science projects</p>
     <ul>
-      <li>Project Planning and Scope Management</li>
-      <li>Data Collection and Cleaning Strategies</li>
-      <li>Exploratory Data Analysis (EDA)</li>
-      <li>Model Building and Evaluation Techniques</li>
-      <li>Deployment and Presentation Skills</li>
-      <li>Client Interaction and Communication</li>
-      <li>Agile Project Management</li>
-      <li>Ethical Considerations in Data Science</li>
-      <li>Continuous Learning and Professional Development</li>
+      <li>Job Search Strategies</li>
+      <li>Resume Building</li>
+      <li>LinkedIn Profile Creation</li>
+      <li>Placement Opportunities with Industry Experts</li>
+      <li>Building a Strong Professional Network</li>
+      <li>Personal Branding and Online Presence</li>
+      <li>Interview Preparation Sessions, Mock Interviews</li>
+      <li>Soft Skills Development</li>
+      <li>Career Growth and Upskilling</li>
     </ul>
   `,
 };
