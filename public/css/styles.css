@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-html{
-	font-family: 'Montserrat', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 :root {
 	--h3-font-family: 'Montserrat', sans-serif;
 	--h3-font-weight: 400;
@@ -28,7 +26,7 @@ html{
 	--h2-medium-line-height: 130.49999475479126%;
 	--h2-medium-font-style: normal;
 	--h1-semi-bold-font-family: 'Montserrat', sans-serif;
-	--h1-semi-bold-font-weight: 500;
+	--h1-semi-bold-font-weight: 700;
 	--h1-semi-bold-font-size: 36px;
 	--h1-semi-bold-letter-spacing: 0.74px;
 	--h1-semi-bold-line-height: 150%;
