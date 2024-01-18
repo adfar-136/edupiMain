@@ -209,7 +209,7 @@
 }
 .bottom-section .fsd-feature {
 	height: 85%;
-	background-color: var(--collection-1-light);
+	background-color: rgba(223, 253, 225, 1);
 	width: 100%;
 	border-radius: 10px;
 	display: flex;
